@@ -1,0 +1,1965 @@
+[2018-08-14 09:30:07]: 日志文件: logs\2018-08-14.log
+[2018-08-14 09:30:08]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 09:30:08]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 09:30:08]: 检测结果intIndex: 1
+[2018-08-14 09:30:08]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 09:30:08]: 执行启动界面...
+[2018-08-14 09:30:08]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 09:30:08]: 子线程thread-log已启动
+[2018-08-14 09:30:10]: press in 101-连接
+[2018-08-14 09:30:10]: 配置文件中读取到的配置有: {'type': 'md', 'host': '127.0.0.1', 'name': 'test', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'password': 'cg082702', 'user': 'root'}
+[2018-08-14 09:30:15]: press in 207-取消
+[2018-08-14 09:32:25]: press in 101-连接
+[2018-08-14 09:32:25]: 配置文件中读取到的配置有: {'type': 'md', 'host': '127.0.0.1', 'name': 'test', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'password': 'cg082702', 'user': 'root'}
+[2018-08-14 09:32:28]: press in 206-确定
+[2018-08-14 09:32:28]: 数据库已连接
+[2018-08-14 09:32:28]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001F3BA1CB7F0>
+[2018-08-14 09:32:28]: 数据库连接成功
+[2018-08-14 09:32:28]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 09:32:28]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 09:32:28]: 查询得到的库的个数: 10
+[2018-08-14 09:32:28]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 09:32:28]: 总共元素个数为: 10
+[2018-08-14 09:32:45]: press in 101-连接
+[2018-08-14 09:32:45]: 配置文件中读取到的配置有: {'type': 'md', 'host': '127.0.0.1', 'name': 'test', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'password': 'cg082702', 'user': 'root'}
+[2018-08-14 09:36:37]: press in 5006-退出
+[2018-08-14 09:36:38]: press in 302-选择框确定
+[2018-08-14 09:36:38]: booleanGetTailExit: True
+[2018-08-14 09:36:38]: threading event is set, 线程将退出
+[2018-08-14 09:36:39]: 数据库连接已关闭
+[2018-08-14 09:36:39]: 程序退出
+[2018-08-14 09:36:41]: 日志文件: logs\2018-08-14.log
+[2018-08-14 09:36:42]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 09:36:42]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 09:36:42]: 检测结果intIndex: 1
+[2018-08-14 09:36:42]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 09:36:42]: 执行启动界面...
+[2018-08-14 09:36:42]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 09:36:42]: 子线程thread-log已启动
+[2018-08-14 09:37:31]: booleanGetTailExit: True
+[2018-08-14 09:37:31]: threading event is set, 线程将退出
+[2018-08-14 09:37:31]: 程序退出
+[2018-08-14 09:37:53]: 日志文件: logs\2018-08-14.log
+[2018-08-14 09:37:53]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 09:37:53]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 09:37:53]: 检测结果intIndex: 1
+[2018-08-14 09:37:53]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 09:37:53]: 执行启动界面...
+[2018-08-14 09:37:53]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 09:37:53]: 子线程thread-log已启动
+[2018-08-14 11:14:31]: booleanGetTailExit: True
+[2018-08-14 11:14:31]: threading event is set, 线程将退出
+[2018-08-14 11:14:31]: 程序退出
+[2018-08-14 11:14:43]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:14:44]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:14:44]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:14:44]: 检测结果intIndex: 1
+[2018-08-14 11:14:44]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:14:44]: 执行启动界面...
+[2018-08-14 11:14:44]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:14:44]: 子线程thread-log已启动
+[2018-08-14 11:14:46]: press in 101-连接
+[2018-08-14 11:14:46]: press in 101-连接
+[2018-08-14 11:14:46]: 配置文件中读取到的配置有: {'name': 'test', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md', 'host': '127.0.0.1', 'user': 'root', 'password': 'cg082702'}
+[2018-08-14 11:14:51]: press in 207-取消
+[2018-08-14 11:14:53]: press in 102-设置
+[2018-08-14 11:14:53]: press in 102-设置
+[2018-08-14 11:14:53]: 配置文件中读取到的配置有: {'name': 'test', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md', 'host': '127.0.0.1', 'user': 'root', 'password': 'cg082702'}
+[2018-08-14 11:14:55]: press in 207-设置框取消
+[2018-08-14 11:14:57]: press in 5006-退出
+[2018-08-14 11:14:57]: press in 5006-退出
+[2018-08-14 11:14:58]: press in 302-选择框确定
+[2018-08-14 11:14:58]: booleanGetTailExit: True
+[2018-08-14 11:14:58]: threading event is set, 线程将退出
+[2018-08-14 11:14:59]: 程序退出
+[2018-08-14 11:17:14]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:17:14]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:17:14]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:17:14]: 检测结果intIndex: 1
+[2018-08-14 11:17:14]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:17:14]: 执行启动界面...
+[2018-08-14 11:17:15]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:17:15]: 子线程thread-log已启动
+[2018-08-14 11:17:16]: <class 'wx._core.RadioButton'>
+[2018-08-14 11:17:16]: press in 104-全选
+[2018-08-14 11:17:16]: 全选个数: 0
+[2018-08-14 11:17:23]: <class 'wx._core.RadioButton'>
+[2018-08-14 11:17:23]: press in 105-反选
+[2018-08-14 11:17:23]: 反选个数: 0
+[2018-08-14 11:17:25]: press in 5006-退出
+[2018-08-14 11:17:26]: press in 302-选择框确定
+[2018-08-14 11:17:26]: booleanGetTailExit: True
+[2018-08-14 11:17:26]: threading event is set, 线程将退出
+[2018-08-14 11:17:26]: 程序退出
+[2018-08-14 11:19:00]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:19:00]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:19:00]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:19:00]: 检测结果intIndex: 1
+[2018-08-14 11:19:00]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:19:00]: 执行启动界面...
+[2018-08-14 11:19:00]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:19:00]: 子线程thread-log已启动
+[2018-08-14 11:19:12]: press in 5006-退出
+[2018-08-14 11:19:12]: press in 302-选择框确定
+[2018-08-14 11:19:12]: booleanGetTailExit: True
+[2018-08-14 11:19:12]: threading event is set, 线程将退出
+[2018-08-14 11:19:13]: 程序退出
+[2018-08-14 11:21:29]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:21:29]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:21:29]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:21:29]: 检测结果intIndex: 1
+[2018-08-14 11:21:29]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:21:29]: 执行启动界面...
+[2018-08-14 11:21:29]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:21:29]: 子线程thread-log已启动
+[2018-08-14 11:21:30]: press in 104-全选
+[2018-08-14 11:21:30]: 全选个数: 0
+[2018-08-14 11:21:33]: press in 105-反选
+[2018-08-14 11:21:33]: 反选个数: 0
+[2018-08-14 11:21:36]: press in 5006-退出
+[2018-08-14 11:21:36]: press in 302-选择框确定
+[2018-08-14 11:21:36]: booleanGetTailExit: True
+[2018-08-14 11:21:36]: threading event is set, 线程将退出
+[2018-08-14 11:21:37]: 程序退出
+[2018-08-14 11:22:20]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:22:21]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:22:21]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:22:21]: 检测结果intIndex: 1
+[2018-08-14 11:22:21]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:22:21]: 执行启动界面...
+[2018-08-14 11:22:21]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:22:21]: 子线程thread-log已启动
+[2018-08-14 11:22:24]: press in 101-连接
+[2018-08-14 11:22:24]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'host': '127.0.0.1', 'type': 'md', 'user': 'root', 'name': 'test', 'password': 'cg082702'}
+[2018-08-14 11:22:27]: press in 207-取消
+[2018-08-14 11:22:47]: press in 104-全选
+[2018-08-14 11:22:47]: 全选个数: 0
+[2018-08-14 11:22:48]: press in 105-反选
+[2018-08-14 11:22:48]: 反选个数: 0
+[2018-08-14 11:23:12]: press in 5006-退出
+[2018-08-14 11:23:13]: press in 302-选择框确定
+[2018-08-14 11:23:13]: booleanGetTailExit: True
+[2018-08-14 11:23:13]: threading event is set, 线程将退出
+[2018-08-14 11:23:13]: 程序退出
+[2018-08-14 11:25:44]: 日志文件: logs\2018-08-14.log
+[2018-08-14 11:25:44]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 11:25:44]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 11:25:44]: 检测结果intIndex: 1
+[2018-08-14 11:25:44]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 11:25:44]: 执行启动界面...
+[2018-08-14 11:25:44]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 11:25:44]: 子线程thread-log已启动
+[2018-08-14 11:25:47]: press in 103-关于工具
+[2018-08-14 11:25:48]: press in 301-确定
+[2018-08-14 11:25:51]: press in 101-连接
+[2018-08-14 11:25:51]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'name': 'test', 'host': '127.0.0.1'}
+[2018-08-14 11:25:52]: press in 207-取消
+[2018-08-14 11:25:54]: press in 102-设置
+[2018-08-14 11:25:54]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'name': 'test', 'host': '127.0.0.1'}
+[2018-08-14 11:25:56]: press in 207-取消
+[2018-08-14 11:25:58]: press in 102-设置
+[2018-08-14 11:25:58]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'name': 'test', 'host': '127.0.0.1'}
+[2018-08-14 11:25:59]: press in 205-选择文件夹
+[2018-08-14 11:26:01]: 未发现内容
+[2018-08-14 11:26:03]: press in 207-取消
+[2018-08-14 11:26:05]: press in 5006-退出
+[2018-08-14 11:26:06]: press in 303-取消
+[2018-08-14 11:26:46]: press in 102-设置
+[2018-08-14 11:26:46]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'name': 'test', 'host': '127.0.0.1'}
+[2018-08-14 11:26:48]: press in 207-取消
+[2018-08-14 11:26:49]: press in 103-关于工具
+[2018-08-14 11:26:50]: press in 301-确定
+[2018-08-14 11:26:52]: press in 5006-退出
+[2018-08-14 11:26:53]: press in 302-确定
+[2018-08-14 11:26:53]: booleanGetTailExit: True
+[2018-08-14 11:26:53]: threading event is set, 线程将退出
+[2018-08-14 11:26:53]: 程序退出
+[2018-08-14 14:19:14]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:19:14]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 14:19:14]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 14:19:14]: 检测结果intIndex: 1
+[2018-08-14 14:19:14]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:19:14]: 执行启动界面...
+[2018-08-14 14:19:14]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 14:19:14]: 子线程thread-log已启动
+[2018-08-14 14:19:53]: press in 5006-退出
+[2018-08-14 14:19:54]: press in 302-确定
+[2018-08-14 14:19:54]: booleanGetTailExit: True
+[2018-08-14 14:19:54]: threading event is set, 线程将退出
+[2018-08-14 14:19:55]: 程序退出
+[2018-08-14 14:19:56]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:19:56]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 14:19:56]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 14:19:56]: 检测结果intIndex: 1
+[2018-08-14 14:19:56]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:19:56]: 执行启动界面...
+[2018-08-14 14:19:56]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 14:19:56]: 子线程thread-log已启动
+[2018-08-14 14:19:59]: press in 5006-退出
+[2018-08-14 14:20:00]: press in 302-确定
+[2018-08-14 14:20:00]: booleanGetTailExit: True
+[2018-08-14 14:20:00]: threading event is set, 线程将退出
+[2018-08-14 14:20:00]: 程序退出
+[2018-08-14 14:20:47]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:21:09]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:21:09]: 检测到系统中已经安装wx模块
+[2018-08-14 14:21:09]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-14 14:21:09]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 14:21:09]: 检测结果intIndex: 1
+[2018-08-14 14:21:09]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:21:09]: 执行启动界面...
+[2018-08-14 14:21:09]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 14:21:09]: 子线程thread-log已启动
+[2018-08-14 14:21:13]: press in 5006-退出
+[2018-08-14 14:21:14]: press in 302-确定
+[2018-08-14 14:21:14]: booleanGetTailExit: True
+[2018-08-14 14:21:14]: threading event is set, 线程将退出
+[2018-08-14 14:21:14]: 程序退出
+[2018-08-14 14:25:52]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:25:52]: 检测到系统中已经安装wx模块
+[2018-08-14 14:25:52]: 检测到系统中已经安装pymysql模块
+[2018-08-14 14:25:53]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 14:25:53]: 检测结果intIndex: 1
+[2018-08-14 14:25:53]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:25:53]: 执行启动界面...
+[2018-08-14 14:25:53]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 14:25:53]: 子线程thread-log已启动
+[2018-08-14 14:25:59]: booleanGetTailExit: True
+[2018-08-14 14:25:59]: threading event is set, 线程将退出
+[2018-08-14 14:26:00]: 程序退出
+[2018-08-14 14:29:13]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:29:13]: 检测到系统中已经安装wx模块
+[2018-08-14 14:29:13]: 检测到系统中已经安装pymysql模块
+[2018-08-14 14:29:13]: 执行环境完全, 将选择启动程序
+[2018-08-14 14:29:13]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 14:29:13]: 检测结果intIndex: 1
+[2018-08-14 14:29:13]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:29:13]: 执行启动界面...
+[2018-08-14 14:29:13]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 14:29:13]: 子线程thread-log已启动
+[2018-08-14 14:29:19]: press in 5006-退出
+[2018-08-14 14:29:20]: press in 302-确定
+[2018-08-14 14:29:20]: booleanGetTailExit: True
+[2018-08-14 14:29:20]: threading event is set, 线程将退出
+[2018-08-14 14:29:20]: 程序退出
+[2018-08-14 14:30:20]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:30:20]: 检测到系统中已经安装wx模块
+[2018-08-14 14:30:20]: 检测到系统中已经安装pymysql模块
+[2018-08-14 14:30:20]: 执行环境完全, 将选择启动程序
+[2018-08-14 14:30:20]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:30:20]: 执行命令行...
+[2018-08-14 14:30:33]: 程序退出
+[2018-08-14 14:30:48]: 日志文件: logs\2018-08-14.log
+[2018-08-14 14:30:48]: 检测到系统中已经安装wx模块
+[2018-08-14 14:30:48]: 检测到系统中已经安装pymysql模块
+[2018-08-14 14:30:48]: 执行环境完全, 将选择启动程序
+[2018-08-14 14:30:48]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 14:30:48]: 执行命令行...
+[2018-08-14 14:30:56]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 14:31:01]: 输入用户名(user name): root
+[2018-08-14 14:31:17]: 输入密码(password): cg082702
+[2018-08-14 14:31:21]: 输入端口号(port): 3306
+[2018-08-14 14:31:42]: 程序退出
+[2018-08-14 15:12:59]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:12:59]: 检测到系统中已经安装wx模块
+[2018-08-14 15:12:59]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:12:59]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:12:59]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:12:59]: 执行命令行...
+[2018-08-14 15:13:09]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:13:12]: 输入端口号(port): 3305
+[2018-08-14 15:13:15]: 输入用户名(user name): root
+[2018-08-14 15:13:18]: 输入密码(password): cg082702
+[2018-08-14 15:13:19]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-14 15:13:19]: 连接出错
+[2018-08-14 15:13:19]: 数据库连接出错, 程序退出
+[2018-08-14 15:22:17]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:22:17]: 检测到系统中已经安装wx模块
+[2018-08-14 15:22:17]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:22:17]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:22:17]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:22:17]: 执行命令行...
+[2018-08-14 15:22:26]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:22:31]: 输入端口号(port): sso6
+[2018-08-14 15:23:31]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:23:31]: 检测到系统中已经安装wx模块
+[2018-08-14 15:23:31]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:23:31]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:23:31]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:23:31]: 执行命令行...
+[2018-08-14 15:23:41]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:23:44]: 输入端口号(port): 3306
+[2018-08-14 15:23:47]: 输入用户名(user name): root
+[2018-08-14 15:23:50]: 输入密码(password): cg082702
+[2018-08-14 15:23:50]: 数据库已连接
+[2018-08-14 15:23:50]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:23:50]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:23:50]: 查询得到的库的个数: 10
+[2018-08-14 15:23:50]: 1: information_schema	2: blog	3: do_myself	4: htg-dev-local	5: htg-for-test	6: mysql	7: performance_schema	8: sakila	9: sys	10: world	
+[2018-08-14 15:24:09]: 选择要查找的库(database): 10
+[2018-08-14 15:24:26]: 输入保存的路径(save path): connectionMysqlNoDB
+[2018-08-14 15:24:37]: 输入保存的文件名(output file name): gt
+[2018-08-14 15:24:40]: 输入保存的文件类型(output file type):
+  1. markdown	 2. text1
+[2018-08-14 15:24:40]: *****导出markdown****
+[2018-08-14 15:24:40]: connectionMysqlNoDB文件夹不存在,已自动创建
+[2018-08-14 15:26:04]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:26:04]: 检测到系统中已经安装wx模块
+[2018-08-14 15:26:04]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:26:04]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:26:04]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 15:26:04]: 检测结果intIndex: 1
+[2018-08-14 15:26:04]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:26:04]: 执行启动界面...
+[2018-08-14 15:26:04]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 15:26:04]: 子线程thread-log已启动
+[2018-08-14 15:26:09]: press in 101-连接
+[2018-08-14 15:26:09]: 配置文件中读取到的配置有: {'name': 'test', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'user': 'root', 'type': 'md', 'password': 'cg082702'}
+[2018-08-14 15:26:12]: press in 206-确定
+[2018-08-14 15:26:12]: 数据库已连接
+[2018-08-14 15:26:12]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x0000028D27D630F0>
+[2018-08-14 15:26:12]: 数据库连接成功
+[2018-08-14 15:26:12]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:26:12]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:26:13]: 查询得到的库的个数: 10
+[2018-08-14 15:26:13]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 15:26:13]: 总共元素个数为: 10
+[2018-08-14 15:26:14]: press in 101-连接
+[2018-08-14 15:26:15]: 配置文件中读取到的配置有: {'name': 'test', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'user': 'root', 'type': 'md', 'password': 'cg082702'}
+[2018-08-14 15:26:17]: press in 205-断开连接
+[2018-08-14 15:27:42]: press in 207-取消
+[2018-08-14 15:27:43]: booleanGetTailExit: True
+[2018-08-14 15:27:43]: threading event is set, 线程将退出
+[2018-08-14 15:27:44]: 数据库连接已关闭
+[2018-08-14 15:27:44]: 程序退出
+[2018-08-14 15:27:46]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:27:46]: 检测到系统中已经安装wx模块
+[2018-08-14 15:27:46]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:27:46]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:27:46]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 15:27:46]: 检测结果intIndex: 1
+[2018-08-14 15:27:46]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:27:46]: 执行启动界面...
+[2018-08-14 15:27:46]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 15:27:47]: 子线程thread-log已启动
+[2018-08-14 15:27:48]: press in 101-连接
+[2018-08-14 15:27:48]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'host': '127.0.0.1', 'type': 'md', 'user': 'root', 'port': '3306', 'name': 'test'}
+[2018-08-14 15:27:49]: press in 206-确定
+[2018-08-14 15:27:50]: 数据库已连接
+[2018-08-14 15:27:50]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x00000268718A3208>
+[2018-08-14 15:27:50]: 数据库连接成功
+[2018-08-14 15:27:50]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:27:50]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:27:50]: 查询得到的库的个数: 10
+[2018-08-14 15:27:50]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 15:27:50]: 总共元素个数为: 10
+[2018-08-14 15:27:52]: press in 101-连接
+[2018-08-14 15:27:52]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'host': '127.0.0.1', 'type': 'md', 'user': 'root', 'port': '3306', 'name': 'test'}
+[2018-08-14 15:27:54]: press in 205-断开连接
+[2018-08-14 15:27:56]: press in 301-确定
+[2018-08-14 15:27:56]: 数据库连接已断开
+[2018-08-14 15:27:56]: searchValuesObj.connectionMysqlObjself: <pymysql.connections.Connection object at 0x00000268718A3208>
+[2018-08-14 15:28:06]: press in 207-取消
+[2018-08-14 15:28:19]: press in 101-连接
+[2018-08-14 15:28:19]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'host': '127.0.0.1', 'type': 'md', 'user': 'root', 'port': '3306', 'name': 'test'}
+[2018-08-14 15:28:22]: press in 205-断开连接
+[2018-08-14 15:28:29]: press in 207-取消
+[2018-08-14 15:29:01]: press in 5006-退出
+[2018-08-14 15:29:02]: press in 302-确定
+[2018-08-14 15:29:02]: booleanGetTailExit: True
+[2018-08-14 15:29:02]: threading event is set, 线程将退出
+[2018-08-14 15:29:23]: press in 101-连接
+[2018-08-14 15:29:23]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': 'cg082702', 'host': '127.0.0.1', 'type': 'md', 'user': 'root', 'port': '3306', 'name': 'test'}
+[2018-08-14 15:29:25]: press in 205-断开连接
+[2018-08-14 15:29:27]: press in 207-取消
+[2018-08-14 15:29:29]: booleanGetTailExit: True
+[2018-08-14 15:29:30]: booleanGetTailExit: True
+[2018-08-14 15:29:35]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:29:35]: 检测到系统中已经安装wx模块
+[2018-08-14 15:29:35]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:29:35]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:29:35]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 15:29:35]: 检测结果intIndex: 1
+[2018-08-14 15:29:35]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:29:35]: 执行启动界面...
+[2018-08-14 15:29:35]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 15:29:35]: 子线程thread-log已启动
+[2018-08-14 15:29:37]: press in 101-连接
+[2018-08-14 15:29:37]: 配置文件中读取到的配置有: {'port': '3306', 'name': 'test', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'user': 'root'}
+[2018-08-14 15:29:38]: press in 206-确定
+[2018-08-14 15:29:38]: 数据库已连接
+[2018-08-14 15:29:38]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x00000207DE5A0208>
+[2018-08-14 15:29:38]: 数据库连接成功
+[2018-08-14 15:29:38]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:29:38]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:29:38]: 查询得到的库的个数: 10
+[2018-08-14 15:29:38]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 15:29:38]: 总共元素个数为: 10
+[2018-08-14 15:29:40]: press in 101-连接
+[2018-08-14 15:29:40]: 配置文件中读取到的配置有: {'port': '3306', 'name': 'test', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'user': 'root'}
+[2018-08-14 15:29:43]: press in 207-取消
+[2018-08-14 15:29:44]: press in 101-连接
+[2018-08-14 15:29:44]: 配置文件中读取到的配置有: {'port': '3306', 'name': 'test', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'user': 'root'}
+[2018-08-14 15:29:45]: press in 205-断开连接
+[2018-08-14 15:29:46]: press in 301-确定
+[2018-08-14 15:29:46]: 数据库连接已断开
+[2018-08-14 15:29:46]: searchValuesObj.connectionMysqlObjself: None
+[2018-08-14 15:29:48]: press in 207-取消
+[2018-08-14 15:29:50]: press in 101-连接
+[2018-08-14 15:29:50]: 配置文件中读取到的配置有: {'port': '3306', 'name': 'test', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'user': 'root'}
+[2018-08-14 15:29:53]: press in 207-取消
+[2018-08-14 15:29:56]: press in 5006-退出
+[2018-08-14 15:29:57]: press in 302-确定
+[2018-08-14 15:29:57]: booleanGetTailExit: True
+[2018-08-14 15:29:57]: threading event is set, 线程将退出
+[2018-08-14 15:29:58]: 程序退出
+[2018-08-14 15:41:45]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:41:45]: 检测到系统中已经安装wx模块
+[2018-08-14 15:41:45]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:41:45]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:41:45]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:41:45]: 执行命令行...
+[2018-08-14 15:41:59]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:41:59]: 检测到系统中已经安装wx模块
+[2018-08-14 15:41:59]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:41:59]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:41:59]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:41:59]: 执行命令行...
+[2018-08-14 15:42:05]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:42:09]: 输入端口号(port): 3306
+[2018-08-14 15:42:11]: 输入用户名(user name): root
+[2018-08-14 15:42:14]: 输入密码(password): cg082702
+[2018-08-14 15:42:14]: 数据库已连接
+[2018-08-14 15:42:14]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:42:14]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:42:14]: 查询得到的库的个数: 10
+[2018-08-14 15:42:14]: 1: information_schema	2: blog	3: do_myself	4: htg-dev-local	5: htg-for-test	6: mysql	7: performance_schema	8: sakila	9: sys	10: world	
+[2018-08-14 15:45:11]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:45:12]: 检测到系统中已经安装wx模块
+[2018-08-14 15:45:12]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:45:12]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:45:12]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:45:12]: 执行命令行...
+[2018-08-14 15:45:21]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:45:24]: 输入端口号(port): 3306
+[2018-08-14 15:45:26]: 输入用户名(user name): root
+[2018-08-14 15:45:43]: 输入密码(password): cg082702
+[2018-08-14 15:45:43]: 数据库已连接
+[2018-08-14 15:45:43]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:45:43]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:45:43]: 查询得到的库的个数: 10
+[2018-08-14 15:45:43]: 1: information_schema	2: blog	3: do_myself	4: htg-dev-local	5: htg-for-test	6: mysql	7: performance_schema	8: sakila	9: sys	10: world	
+[2018-08-14 15:45:48]: 选择要查找的库(database): 2
+[2018-08-14 15:45:55]: 程序退出
+[2018-08-14 15:57:04]: 日志文件: logs\2018-08-14.log
+[2018-08-14 15:57:04]: 检测到系统中已经安装wx模块
+[2018-08-14 15:57:04]: 检测到系统中已经安装pymysql模块
+[2018-08-14 15:57:04]: 执行环境完全, 将选择启动程序
+[2018-08-14 15:57:04]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 15:57:04]: 执行命令行...
+[2018-08-14 15:57:09]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 15:57:11]: 输入端口号(port): 3306
+[2018-08-14 15:57:13]: 输入用户名(user name): root
+[2018-08-14 15:57:16]: 输入密码(password): cg082702
+[2018-08-14 15:57:16]: 数据库已连接
+[2018-08-14 15:57:16]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 15:57:16]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 15:57:16]: 查询得到的库的个数: 10
+[2018-08-14 15:57:16]: 1: information_schema	2: blog	3: do_myself	4: htg-dev-local	5: htg-for-test	6: mysql	7: performance_schema	8: sakila	9: sys	10: world	
+[2018-08-14 15:57:26]: 选择要查找的库(database): 3
+[2018-08-14 15:58:04]: 输入保存的路径(save path): D:/Test/export/DBProduce
+[2018-08-14 15:58:10]: 输入保存的文件名(output file name): ng-out
+[2018-08-14 15:58:15]: 输入保存的文件类型(output file type):
+  1. markdown	 2. text1
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 15:58:15]: 查询得到的表个数: 7
+[2018-08-14 15:58:15]: *****导出markdown****
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('tableName', 'htg_activity'), ('createTime', '2018-03-22 10:02:41'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '173')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'tableName': 12, 'updateTime': 10, 'tableCollation': 14, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollstarttime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollconfig'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'priority'), ('isNull', 'YES'), ('columnType', 'int(3)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pic'), ('isNull', 'YES'), ('columnType', 'char(32)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '多个以“,”分隔')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'longtext'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'columnType': 19, 'columnName': 15, 'isNull': 6, 'isKey': 5, 'columnComment': 20}
+[2018-08-14 15:58:15]: do_myself.htg_activity导出成功
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('tableName', 'htg_activity_enroll_copy1'), ('createTime', '2018-03-22 10:16:21'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '0')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'tableName': 25, 'updateTime': 10, 'tableCollation': 14, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'activityid'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'NO'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'phone'), ('isNull', 'NO'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'columnType': 19, 'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 20}
+[2018-08-14 15:58:15]: do_myself.htg_activity_enroll_copy1导出成功
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('tableName', 'htg_daily_service_base'), ('createTime', '2018-02-26 16:04:16'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '12')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'tableName': 22, 'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day_price'), ('isNull', 'NO'), ('columnType', 'decimal(5,4)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'columnType': 16, 'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 13}
+[2018-08-14 15:58:15]: do_myself.htg_daily_service_base导出成功
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('tableName', 'htg_face_log'), ('createTime', '2018-06-15 15:49:54'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '0')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'tableName': 12, 'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:15]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 15:58:15]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '执行添加操作的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '添加的时间')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '操作用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '修改的时间')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态(是否还在机构)')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '主键id')]), OrderedDict([('columnName', 'device_id'), ('isNull', 'NO'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '设备串号')]), OrderedDict([('columnName', 'face_id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '设备端生成face_id')]), OrderedDict([('columnName', 'rate'), ('isNull', 'NO'), ('columnType', 'decimal(5,3)'), ('isKey', ''), ('columnComment', '匹配精度')]), OrderedDict([('columnName', 'data'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '匹配的日期')])]
+[2018-08-14 15:58:15]: 得到的各列元素最长值为: {'columnType': 16, 'columnName': 14, 'isNull': 6, 'isKey': 5, 'columnComment': 15}
+[2018-08-14 15:58:16]: do_myself.htg_face_log导出成功
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('tableName', 'htg_holiday_date'), ('createTime', '2018-02-26 15:28:39'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '116')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'tableName': 16, 'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'columnType': 16, 'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 13}
+[2018-08-14 15:58:16]: do_myself.htg_holiday_date导出成功
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'tableName': 9, 'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的时间戳')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的时间戳')]), OrderedDict([('columnName', 'effect'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否逻辑删除\r\n            0、已被逻辑删除；1、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否启用/生效\r\n            0、未启用/生效；1、启用/生效')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'org_id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '机构id')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'area'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'address'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'service_school'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'desc'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'environment'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'licence'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '许可证')]), OrderedDict([('columnName', 'campusimg'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'YES'), ('columnType', 'tinyint(2) unsigned'), ('isKey', ''), ('columnComment', '0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校')]), OrderedDict([('columnName', 'auto_charge'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'columnType': 19, 'columnName': 14, 'isNull': 6, 'isKey': 5, 'columnComment': 37}
+[2018-08-14 15:58:16]: do_myself.htg_shop导出成功
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('tableName', 'oss_base_area'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '48152')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'tableName': 13, 'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11}
+[2018-08-14 15:58:16]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 15:58:16]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'sysid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联系统id\r\nnull、 本系统默认数据')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联公司id')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用\r\n1、启用\r\n\r\n受effect的置0约束')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'code'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pid'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'NO'), ('columnType', 'tinyint(2)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pinyin'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'spinyin'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'postcode'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'longitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'latitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'fullname'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'simplename'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 15:58:16]: 得到的各列元素最长值为: {'columnType': 19, 'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 27}
+[2018-08-14 15:58:17]: do_myself.oss_base_area导出成功
+[2018-08-14 15:58:17]: *****导出完成*****
+[2018-08-14 15:58:17]: 导出耗时: 1.7821s
+[2018-08-14 16:01:03]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:01:04]: 检测到系统中已经安装wx模块
+[2018-08-14 16:01:04]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:01:04]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:01:04]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:01:04]: 执行命令行...
+[2018-08-14 16:01:08]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 16:01:11]: 输入端口号(port): 3306
+[2018-08-14 16:01:20]: 输入用户名(user name): root
+[2018-08-14 16:01:22]: 输入密码(password): cg082702
+[2018-08-14 16:01:22]: 数据库已连接
+[2018-08-14 16:01:22]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 16:01:22]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 16:01:22]: 查询得到的库的个数: 10
+[2018-08-14 16:01:22]: 1: information_schema	2: blog	3: do_myself	4: htg-dev-local	5: htg-for-test	6: mysql	7: performance_schema	8: sakila	9: sys	10: world	
+[2018-08-14 16:02:01]: 选择要查找的库(database): 3
+[2018-08-14 16:02:39]: 输入保存的路径(save path): D:/Test/export/DBProduce
+[2018-08-14 16:02:52]: 输入保存的文件名(output file name): testdodg
+[2018-08-14 16:02:54]: 输入保存的文件类型(output file type):
+  1. markdown	 2. text1
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 16:02:54]: 查询得到的表个数: 7
+[2018-08-14 16:02:54]: *****导出markdown****
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('tableName', 'htg_activity'), ('createTime', '2018-03-22 10:02:41'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '173')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 12, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 14}
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollstarttime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollconfig'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'priority'), ('isNull', 'YES'), ('columnType', 'int(3)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pic'), ('isNull', 'YES'), ('columnType', 'char(32)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '多个以“,”分隔')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'longtext'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'columnName': 15, 'isNull': 6, 'isKey': 5, 'columnComment': 20, 'columnType': 19}
+[2018-08-14 16:02:54]: do_myself.htg_activity导出成功
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('tableName', 'htg_activity_enroll_copy1'), ('createTime', '2018-03-22 10:16:21'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '0')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 25, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 14}
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'activityid'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'NO'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'phone'), ('isNull', 'NO'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 20, 'columnType': 19}
+[2018-08-14 16:02:54]: do_myself.htg_activity_enroll_copy1导出成功
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('tableName', 'htg_daily_service_base'), ('createTime', '2018-02-26 16:04:16'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '12')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 22, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 15}
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day_price'), ('isNull', 'NO'), ('columnType', 'decimal(5,4)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 13, 'columnType': 16}
+[2018-08-14 16:02:54]: do_myself.htg_daily_service_base导出成功
+[2018-08-14 16:02:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 16:02:54]: 查到的数据: [OrderedDict([('tableName', 'htg_face_log'), ('createTime', '2018-06-15 15:49:54'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '0')])]
+[2018-08-14 16:02:54]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 12, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 15}
+[2018-08-14 16:02:55]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 16:02:55]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '执行添加操作的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '添加的时间')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '操作用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '修改的时间')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态(是否还在机构)')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '主键id')]), OrderedDict([('columnName', 'device_id'), ('isNull', 'NO'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '设备串号')]), OrderedDict([('columnName', 'face_id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '设备端生成face_id')]), OrderedDict([('columnName', 'rate'), ('isNull', 'NO'), ('columnType', 'decimal(5,3)'), ('isKey', ''), ('columnComment', '匹配精度')]), OrderedDict([('columnName', 'data'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '匹配的日期')])]
+[2018-08-14 16:02:55]: 得到的各列元素最长值为: {'columnName': 14, 'isNull': 6, 'isKey': 5, 'columnComment': 15, 'columnType': 16}
+[2018-08-14 16:02:55]: do_myself.htg_face_log导出成功
+[2018-08-14 16:02:55]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 16:02:55]: 查到的数据: [OrderedDict([('tableName', 'htg_holiday_date'), ('createTime', '2018-02-26 15:28:39'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '116')])]
+[2018-08-14 16:02:55]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 16, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 15}
+[2018-08-14 16:02:55]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 16:02:55]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:55]: 得到的各列元素最长值为: {'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 13, 'columnType': 16}
+[2018-08-14 16:02:55]: do_myself.htg_holiday_date导出成功
+[2018-08-14 16:02:55]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:02:55]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 16:02:55]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 9, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 15}
+[2018-08-14 16:02:55]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:02:55]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的时间戳')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的时间戳')]), OrderedDict([('columnName', 'effect'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否逻辑删除\r\n            0、已被逻辑删除；1、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否启用/生效\r\n            0、未启用/生效；1、启用/生效')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'org_id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '机构id')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'area'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'address'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'service_school'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'desc'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'environment'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'licence'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '许可证')]), OrderedDict([('columnName', 'campusimg'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'YES'), ('columnType', 'tinyint(2) unsigned'), ('isKey', ''), ('columnComment', '0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校')]), OrderedDict([('columnName', 'auto_charge'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:55]: 得到的各列元素最长值为: {'columnName': 14, 'isNull': 6, 'isKey': 5, 'columnComment': 37, 'columnType': 19}
+[2018-08-14 16:02:56]: do_myself.htg_shop导出成功
+[2018-08-14 16:02:56]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 16:02:56]: 查到的数据: [OrderedDict([('tableName', 'oss_base_area'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '48152')])]
+[2018-08-14 16:02:56]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 13, 'updateTime': 10, 'dataRowsNum': 11, 'tableCollation': 15}
+[2018-08-14 16:02:56]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 16:02:56]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'sysid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联系统id\r\nnull、 本系统默认数据')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联公司id')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用\r\n1、启用\r\n\r\n受effect的置0约束')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'code'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pid'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'NO'), ('columnType', 'tinyint(2)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pinyin'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'spinyin'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'postcode'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'longitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'latitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'fullname'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'simplename'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:02:56]: 得到的各列元素最长值为: {'columnName': 12, 'isNull': 6, 'isKey': 5, 'columnComment': 27, 'columnType': 19}
+[2018-08-14 16:02:56]: do_myself.oss_base_area导出成功
+[2018-08-14 16:02:56]: *****导出完成*****
+[2018-08-14 16:02:56]: 导出耗时: 2.1108s
+[2018-08-14 16:06:11]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:06:12]: 检测到系统中已经安装wx模块
+[2018-08-14 16:06:12]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:06:12]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:06:12]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:06:12]: 执行命令行...
+[2018-08-14 16:06:12]: 请输入数据库信息('q to exit')
+[2018-08-14 16:08:08]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:08:08]: 检测到系统中已经安装wx模块
+[2018-08-14 16:08:08]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:08:08]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:08:08]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:08:08]: 执行命令行...
+[2018-08-14 16:08:08]: 请输入数据库信息('q to exit')
+[2018-08-14 16:08:08]: [2018-08-14 16:08:08]: 输入数据库地址(host address): 
+[2018-08-14 16:08:38]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:08:38]: 检测到系统中已经安装wx模块
+[2018-08-14 16:08:38]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:08:38]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:08:38]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:08:38]: 执行命令行...
+[2018-08-14 16:08:38]: 请输入数据库信息('q to exit')
+[2018-08-14 16:08:38]: 输入数据库地址(host address): 
+[2018-08-14 16:08:47]: 输入数据库地址(host address): 127.0.0.1
+[2018-08-14 16:08:47]: 输入端口号(port): 
+[2018-08-14 16:09:21]: 输入端口号(port): 3306
+[2018-08-14 16:09:21]: 输入用户名(user name): 
+[2018-08-14 16:11:21]: 程序退出
+[2018-08-14 16:11:23]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:11:23]: 检测到系统中已经安装wx模块
+[2018-08-14 16:11:23]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:11:23]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:11:23]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:11:23]: 执行命令行...
+[2018-08-14 16:11:23]: 请输入数据库信息('q to exit')
+[2018-08-14 16:11:23]: 请输入数据库地址(host address): 
+[2018-08-14 16:11:29]: 您的输入为: 127.0.0.1
+[2018-08-14 16:11:29]: 请输入端口号(port): 
+[2018-08-14 16:11:42]: 您的输入为: 3305
+[2018-08-14 16:11:42]: 请输入用户名(user name): 
+[2018-08-14 16:11:49]: 您的输入为: root
+[2018-08-14 16:11:49]: 请输入密码(password): 
+[2018-08-14 16:11:53]: 您的输入为: cg082702
+[2018-08-14 16:11:54]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-14 16:11:54]: 连接出错
+[2018-08-14 16:11:54]: 数据库连接出错, 程序退出
+[2018-08-14 16:14:02]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:14:02]: 检测到系统中已经安装wx模块
+[2018-08-14 16:14:02]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:14:02]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:14:02]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 16:14:02]: 检测结果intIndex: 1
+[2018-08-14 16:14:02]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:14:02]: 执行启动界面...
+[2018-08-14 16:14:02]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 16:14:02]: 子线程thread-log已启动
+[2018-08-14 16:14:05]: press in 101-连接
+[2018-08-14 16:14:05]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'host': '127.0.0.1', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'name': 'test', 'password': 'cg082702'}
+[2018-08-14 16:14:06]: press in 207-取消
+[2018-08-14 16:14:08]: press in 101-连接
+[2018-08-14 16:14:08]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'host': '127.0.0.1', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'name': 'test', 'password': 'cg082702'}
+[2018-08-14 16:14:09]: press in 206-确定
+[2018-08-14 16:14:09]: 数据库已连接
+[2018-08-14 16:14:09]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001B5A676F710>
+[2018-08-14 16:14:09]: 数据库连接成功
+[2018-08-14 16:14:09]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 16:14:09]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 16:14:09]: 查询得到的库的个数: 10
+[2018-08-14 16:14:09]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 16:14:09]: 总共元素个数为: 10
+[2018-08-14 16:14:12]: 下拉框选择: do_myself
+[2018-08-14 16:14:12]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 16:14:12]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 16:14:12]: 查询得到的表个数: 7
+[2018-08-14 16:14:12]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-14 16:14:12]: 总共元素个数为: 7
+[2018-08-14 16:14:16]: press in 104-全选
+[2018-08-14 16:14:16]: 全选个数: 7
+[2018-08-14 16:14:24]: press in 102-设置
+[2018-08-14 16:14:24]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'host': '127.0.0.1', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'name': 'test', 'password': 'cg082702'}
+[2018-08-14 16:14:37]: press in 205-选择文件夹
+[2018-08-14 16:14:50]: press in 206-确定
+[2018-08-14 16:14:50]: [ExportConfigure]发生更改的配置项如下: 
+[2018-08-14 16:14:50]: name: test-180814
+[2018-08-14 16:14:50]: path: D:\Test\export\DBProduce
+[2018-08-14 16:14:50]: 已经更新修改: [ExportConfigure]配置块
+[2018-08-14 16:14:52]: press in 107-确认导出
+[2018-08-14 16:14:52]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'host': '127.0.0.1', 'path': 'D:\\Test\\export\\DBProduce', 'port': '3306', 'name': 'test-180814', 'password': 'cg082702'}
+[2018-08-14 16:14:52]: *****导出markdown****
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('tableName', 'htg_activity'), ('createTime', '2018-03-22 10:02:41'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '173')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 14, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 12}
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollstarttime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'enrollconfig'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'priority'), ('isNull', 'YES'), ('columnType', 'int(3)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pic'), ('isNull', 'YES'), ('columnType', 'char(32)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '多个以“,”分隔')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'longtext'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 15, 'columnType': 19, 'columnComment': 20, 'isNull': 6}
+[2018-08-14 16:14:53]: do_myself.htg_activity导出成功
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('tableName', 'htg_activity_enroll_copy1'), ('createTime', '2018-03-22 10:16:21'), ('updateTime', ''), ('tableCollation', 'utf8_bin'), ('dataRowsNum', '0')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 14, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 25}
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_activity_enroll_copy1'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'null、系统操作')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、已被逻辑删除；1或非0、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用；1或非0、启用')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', 'NULL、平台活动')]), OrderedDict([('columnName', 'activityid'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'NO'), ('columnType', 'varchar(50)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'phone'), ('isNull', 'NO'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'memo'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 12, 'columnType': 19, 'columnComment': 20, 'isNull': 6}
+[2018-08-14 16:14:53]: do_myself.htg_activity_enroll_copy1导出成功
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('tableName', 'htg_daily_service_base'), ('createTime', '2018-02-26 16:04:16'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '12')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 22}
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_daily_service_base'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day_price'), ('isNull', 'NO'), ('columnType', 'decimal(5,4)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 12, 'columnType': 16, 'columnComment': 13, 'isNull': 6}
+[2018-08-14 16:14:53]: do_myself.htg_daily_service_base导出成功
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('tableName', 'htg_face_log'), ('createTime', '2018-06-15 15:49:54'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '0')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 12}
+[2018-08-14 16:14:53]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_face_log'
+[2018-08-14 16:14:53]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '执行添加操作的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '添加的时间')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '操作用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '修改的时间')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态(是否还在机构)')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '该条数据的状态')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '主键id')]), OrderedDict([('columnName', 'device_id'), ('isNull', 'NO'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '设备串号')]), OrderedDict([('columnName', 'face_id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '设备端生成face_id')]), OrderedDict([('columnName', 'rate'), ('isNull', 'NO'), ('columnType', 'decimal(5,3)'), ('isKey', ''), ('columnComment', '匹配精度')]), OrderedDict([('columnName', 'data'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '匹配的日期')])]
+[2018-08-14 16:14:53]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 14, 'columnType': 16, 'columnComment': 15, 'isNull': 6}
+[2018-08-14 16:14:54]: do_myself.htg_face_log导出成功
+[2018-08-14 16:14:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 16:14:54]: 查到的数据: [OrderedDict([('tableName', 'htg_holiday_date'), ('createTime', '2018-02-26 15:28:39'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '116')])]
+[2018-08-14 16:14:54]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 16}
+[2018-08-14 16:14:54]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_holiday_date'
+[2018-08-14 16:14:54]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'varchar(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(10) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'year'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'month'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'day'), ('isNull', 'NO'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:54]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 12, 'columnType': 16, 'columnComment': 13, 'isNull': 6}
+[2018-08-14 16:14:54]: do_myself.htg_holiday_date导出成功
+[2018-08-14 16:14:54]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:14:54]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 16:14:54]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 9}
+[2018-08-14 16:14:54]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:14:54]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的时间戳')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的时间戳')]), OrderedDict([('columnName', 'effect'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否逻辑删除\r\n            0、已被逻辑删除；1、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否启用/生效\r\n            0、未启用/生效；1、启用/生效')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'org_id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '机构id')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'area'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'address'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'service_school'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'desc'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'environment'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'licence'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '许可证')]), OrderedDict([('columnName', 'campusimg'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'YES'), ('columnType', 'tinyint(2) unsigned'), ('isKey', ''), ('columnComment', '0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校')]), OrderedDict([('columnName', 'auto_charge'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:54]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 14, 'columnType': 19, 'columnComment': 37, 'isNull': 6}
+[2018-08-14 16:14:55]: do_myself.htg_shop导出成功
+[2018-08-14 16:14:55]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 16:14:55]: 查到的数据: [OrderedDict([('tableName', 'oss_base_area'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '48152')])]
+[2018-08-14 16:14:55]: 得到的各列元素最长值为: {'updateTime': 10, 'tableCollation': 15, 'createTime': 19, 'dataRowsNum': 11, 'tableName': 13}
+[2018-08-14 16:14:55]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 16:14:55]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'sysid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联系统id\r\nnull、 本系统默认数据')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联公司id')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用\r\n1、启用\r\n\r\n受effect的置0约束')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'code'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pid'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'NO'), ('columnType', 'tinyint(2)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pinyin'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'spinyin'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'postcode'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'longitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'latitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'fullname'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'simplename'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:14:55]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 12, 'columnType': 19, 'columnComment': 27, 'isNull': 6}
+[2018-08-14 16:14:55]: do_myself.oss_base_area导出成功
+[2018-08-14 16:14:55]: *****导出完成*****
+[2018-08-14 16:14:55]: 导出耗时: 2.6785s
+[2018-08-14 16:15:23]: press in 5006-退出
+[2018-08-14 16:23:24]: press in 302-确定
+[2018-08-14 16:23:24]: booleanGetTailExit: True
+[2018-08-14 16:23:24]: threading event is set, 线程将退出
+[2018-08-14 16:23:24]: 数据库连接已关闭
+[2018-08-14 16:23:24]: 程序退出
+[2018-08-14 16:30:01]: 日志文件: logs\2018-08-14.log
+[2018-08-14 16:30:02]: 检测到系统中已经安装wx模块
+[2018-08-14 16:30:02]: 检测到系统中已经安装pymysql模块
+[2018-08-14 16:30:02]: 执行环境完全, 将选择启动程序
+[2018-08-14 16:30:02]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 16:30:02]: 检测结果intIndex: 1
+[2018-08-14 16:30:02]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 16:30:02]: 执行启动界面...
+[2018-08-14 16:30:02]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 16:30:02]: 子线程thread-log已启动
+[2018-08-14 16:30:05]: press in 101-连接
+[2018-08-14 16:30:05]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'name': 'test-180814', 'path': 'D:\\Test\\export\\DBProduce'}
+[2018-08-14 16:30:06]: press in 206-确定
+[2018-08-14 16:30:06]: 数据库已连接
+[2018-08-14 16:30:06]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x00000212608CF240>
+[2018-08-14 16:30:06]: 数据库连接成功
+[2018-08-14 16:30:06]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 16:30:06]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 16:30:06]: 查询得到的库的个数: 10
+[2018-08-14 16:30:06]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 16:30:06]: 总共元素个数为: 10
+[2018-08-14 16:30:08]: 下拉框选择: do_myself
+[2018-08-14 16:30:08]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 16:30:08]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 16:30:08]: 查询得到的表个数: 7
+[2018-08-14 16:30:08]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-14 16:30:08]: 总共元素个数为: 7
+[2018-08-14 16:30:13]: press in 107-确认导出
+[2018-08-14 16:30:13]: 配置文件中读取到的配置有: {'port': '3306', 'user': 'root', 'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'name': 'test-180814', 'path': 'D:\\Test\\export\\DBProduce'}
+[2018-08-14 16:30:13]: *****导出markdown****
+[2018-08-14 16:30:13]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:30:13]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 16:30:13]: 得到的各列元素最长值为: {'createTime': 19, 'tableName': 9, 'tableCollation': 15, 'updateTime': 10, 'dataRowsNum': 11}
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | htg_shop |2018-03-22 09:58:21 | |utf8_general_ci |1785 |
+[2018-08-14 16:30:13]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 16:30:13]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的时间戳')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的时间戳')]), OrderedDict([('columnName', 'effect'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否逻辑删除\r\n            0、已被逻辑删除；1、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否启用/生效\r\n            0、未启用/生效；1、启用/生效')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'org_id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '机构id')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'area'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'address'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'service_school'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'desc'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'environment'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'licence'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '许可证')]), OrderedDict([('columnName', 'campusimg'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'YES'), ('columnType', 'tinyint(2) unsigned'), ('isKey', ''), ('columnComment', '0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校')]), OrderedDict([('columnName', 'auto_charge'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 16:30:13]: 得到的各列元素最长值为: {'isKey': 5, 'columnName': 14, 'isNull': 6, 'columnComment': 37, 'columnType': 19}
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | append_user_id |YES |int(11) | |添加记录的用户id |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | append_time |YES |int(11) | |添加记录的时间戳 |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | modify_user_id |YES |int(11) | |最后修改记录的用户id |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | modify_time |YES |int(11) | |最后修改记录的时间戳 |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | effect |YES |tinyint(1) | |是否逻辑删除
+            0、已被逻辑删除；1、未被逻辑删除 |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:13]: | active |YES |tinyint(1) | |是否启用/生效
+            0、未启用/生效；1、启用/生效 |
+[2018-08-14 16:30:13]: 行内容: 
+[2018-08-14 16:30:14]: | id |NO |int(11) |YES | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | org_id |NO |int(11) unsigned | |机构id |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | name |YES |varchar(255) | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | area |YES |varchar(255) | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | address |YES |varchar(255) | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | tags |YES |varchar(255) | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | service_school |YES |varchar(255) | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | desc |YES |text | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | environment |YES |text | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | licence |YES |text | |许可证 |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | campusimg |YES |text | | |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | level |YES |tinyint(2) unsigned | |0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校 |
+[2018-08-14 16:30:14]: 行内容: 
+[2018-08-14 16:30:14]: | auto_charge |YES |tinyint(1) | | |
+[2018-08-14 16:30:14]: do_myself.htg_shop导出成功
+[2018-08-14 16:30:14]: *****导出完成*****
+[2018-08-14 16:30:14]: 导出耗时: 1.3142s
+[2018-08-14 16:31:39]: press in 5006-退出
+[2018-08-14 16:31:40]: press in 302-确定
+[2018-08-14 16:31:40]: booleanGetTailExit: True
+[2018-08-14 16:31:40]: threading event is set, 线程将退出
+[2018-08-14 16:31:40]: 数据库连接已关闭
+[2018-08-14 16:31:40]: 程序退出
+[2018-08-14 17:35:30]: 日志文件: logs\2018-08-14.log
+[2018-08-14 17:35:31]: 检测到系统中已经安装wx模块
+[2018-08-14 17:35:31]: 检测到系统中已经安装pymysql模块
+[2018-08-14 17:35:31]: 执行环境完全, 将选择启动程序
+[2018-08-14 17:35:31]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 17:35:31]: 检测结果intIndex: 1
+[2018-08-14 17:35:31]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 17:35:31]: 执行启动界面...
+[2018-08-14 17:35:31]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 17:35:31]: 子线程thread-log已启动
+[2018-08-14 17:35:33]: press in 101-连接
+[2018-08-14 17:35:34]: 配置文件中读取到的配置有: {'password': 'cg082702', 'host': '127.0.0.1', 'path': 'D:\\Test\\export\\DBProduce', 'user': 'root', 'type': 'md', 'name': 'test-180814', 'port': '3306'}
+[2018-08-14 17:35:35]: press in 206-确定
+[2018-08-14 17:35:35]: 数据库已连接
+[2018-08-14 17:35:35]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001FC1BE003C8>
+[2018-08-14 17:35:35]: 数据库连接成功
+[2018-08-14 17:35:35]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 17:35:35]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 17:35:35]: 查询得到的库的个数: 10
+[2018-08-14 17:35:35]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 17:35:35]: 总共元素个数为: 10
+[2018-08-14 17:35:39]: 下拉框选择: do_myself
+[2018-08-14 17:35:39]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 17:35:39]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 17:35:39]: 查询得到的表个数: 7
+[2018-08-14 17:35:39]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-14 17:35:39]: 总共元素个数为: 7
+[2018-08-14 17:35:47]: press in 102-设置
+[2018-08-14 17:35:47]: 配置文件中读取到的配置有: {'password': 'cg082702', 'host': '127.0.0.1', 'path': 'D:\\Test\\export\\DBProduce', 'user': 'root', 'type': 'md', 'name': 'test-180814', 'port': '3306'}
+[2018-08-14 17:35:57]: press in 206-确定
+[2018-08-14 17:35:57]: [ExportConfigure]发生更改的配置项如下: 
+[2018-08-14 17:35:57]: name: test-180814-1
+[2018-08-14 17:35:57]: 已经更新修改: [ExportConfigure]配置块
+[2018-08-14 17:36:00]: press in 107-确认导出
+[2018-08-14 17:36:00]: 配置文件中读取到的配置有: {'password': 'cg082702', 'host': '127.0.0.1', 'path': 'D:\\Test\\export\\DBProduce', 'user': 'root', 'type': 'md', 'name': 'test-180814-1', 'port': '3306'}
+[2018-08-14 17:36:00]: *****导出markdown****
+[2018-08-14 17:36:00]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 17:36:00]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 17:36:00]: 得到的各列元素最长值为: {'dataRowsNum': 11, 'tableName': 9, 'createTime': 19, 'updateTime': 10, 'tableCollation': 15}
+[2018-08-14 17:36:00]: do_myself.htg_shop导出出错
+[2018-08-14 17:36:00]: replaceAllChar() missing 1 required positional argument: 'strContent'
+[2018-08-14 17:36:00]: *****导出完成*****
+[2018-08-14 17:36:00]: 导出耗时: 0.1978s
+[2018-08-14 17:42:34]: press in 5006-退出
+[2018-08-14 17:42:35]: press in 302-确定
+[2018-08-14 17:42:35]: booleanGetTailExit: True
+[2018-08-14 17:42:35]: threading event is set, 线程将退出
+[2018-08-14 17:42:35]: 数据库连接已关闭
+[2018-08-14 17:42:36]: 程序退出
+[2018-08-14 17:42:53]: 日志文件: logs\2018-08-14.log
+[2018-08-14 17:42:53]: 检测到系统中已经安装wx模块
+[2018-08-14 17:42:54]: 检测到系统中已经安装pymysql模块
+[2018-08-14 17:42:54]: 执行环境完全, 将选择启动程序
+[2018-08-14 17:42:54]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-14 17:42:54]: 检测结果intIndex: 1
+[2018-08-14 17:42:54]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-14 17:42:54]: 执行启动界面...
+[2018-08-14 17:42:54]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-14 17:42:54]: 子线程thread-log已启动
+[2018-08-14 17:42:57]: press in 101-连接
+[2018-08-14 17:42:57]: 配置文件中读取到的配置有: {'path': 'D:\\Test\\export\\DBProduce', 'user': 'root', 'password': 'cg082702', 'name': 'test-180814-1', 'port': '3306', 'host': '127.0.0.1', 'type': 'md'}
+[2018-08-14 17:42:58]: press in 206-确定
+[2018-08-14 17:42:58]: 数据库已连接
+[2018-08-14 17:42:58]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001DB677EE320>
+[2018-08-14 17:42:58]: 数据库连接成功
+[2018-08-14 17:42:58]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-14 17:42:58]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-14 17:42:58]: 查询得到的库的个数: 10
+[2018-08-14 17:42:58]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-14 17:42:58]: 总共元素个数为: 10
+[2018-08-14 17:43:02]: 下拉框选择: do_myself
+[2018-08-14 17:43:02]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-14 17:43:02]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-14 17:43:02]: 查询得到的表个数: 7
+[2018-08-14 17:43:02]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-14 17:43:02]: 总共元素个数为: 7
+[2018-08-14 17:43:05]: press in 107-确认导出
+[2018-08-14 17:43:05]: 配置文件中读取到的配置有: {'path': 'D:\\Test\\export\\DBProduce', 'user': 'root', 'password': 'cg082702', 'name': 'test-180814-1', 'port': '3306', 'host': '127.0.0.1', 'type': 'md'}
+[2018-08-14 17:43:05]: *****导出markdown****
+[2018-08-14 17:43:05]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 17:43:05]: 查到的数据: [OrderedDict([('tableName', 'htg_shop'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '1785')])]
+[2018-08-14 17:43:05]: 得到的各列元素最长值为: {'updateTime': 10, 'createTime': 19, 'dataRowsNum': 11, 'tableCollation': 15, 'tableName': 9}
+[2018-08-14 17:43:05]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'htg_shop'
+[2018-08-14 17:43:05]: 查到的数据: [OrderedDict([('columnName', 'append_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的用户id')]), OrderedDict([('columnName', 'append_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '添加记录的时间戳')]), OrderedDict([('columnName', 'modify_user_id'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的用户id')]), OrderedDict([('columnName', 'modify_time'), ('isNull', 'YES'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '最后修改记录的时间戳')]), OrderedDict([('columnName', 'effect'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否逻辑删除\r\n            0、已被逻辑删除；1、未被逻辑删除')]), OrderedDict([('columnName', 'active'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '是否启用/生效\r\n            0、未启用/生效；1、启用/生效')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'org_id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '机构id')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'area'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'address'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'tags'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'service_school'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'desc'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'environment'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'licence'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '许可证')]), OrderedDict([('columnName', 'campusimg'), ('isNull', 'YES'), ('columnType', 'text'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'YES'), ('columnType', 'tinyint(2) unsigned'), ('isKey', ''), ('columnComment', '0-APP使用机构；1-普通合作校；2-小台设备合作校；3-物联网合作校')]), OrderedDict([('columnName', 'auto_charge'), ('isNull', 'YES'), ('columnType', 'tinyint(1)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 17:43:05]: 得到的各列元素最长值为: {'columnName': 14, 'columnType': 19, 'isKey': 5, 'columnComment': 37, 'isNull': 6}
+[2018-08-14 17:43:05]: do_myself.htg_shop导出成功
+[2018-08-14 17:43:05]: 执行数据库查询语句: /*
+describe: get table data change message by table name and database name
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName,
+	IFNULL(CREATE_TIME, '') AS createTime,
+	IFNULL(UPDATE_TIME, '') AS updateTime,
+	TABLE_COLLATION AS tableCollation,
+	IFNULL(TABLE_ROWS, '') AS dataRowsNum
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 17:43:05]: 查到的数据: [OrderedDict([('tableName', 'oss_base_area'), ('createTime', '2018-03-22 09:58:21'), ('updateTime', ''), ('tableCollation', 'utf8_general_ci'), ('dataRowsNum', '48152')])]
+[2018-08-14 17:43:05]: 得到的各列元素最长值为: {'updateTime': 10, 'createTime': 19, 'dataRowsNum': 11, 'tableCollation': 15, 'tableName': 13}
+[2018-08-14 17:43:05]: 执行数据库查询语句: /*
+describe: get table msg by table name and databse name
+author: cg
+create time: 2018-06-12
+*/
+
+
+SELECT
+	COLUMN_NAME AS columnName,
+	IS_NULLABLE AS isNull,
+	COLUMN_TYPE AS columnType,
+
+IF (COLUMN_KEY = 'PRI', 'YES', '') AS isKey,
+ IFNULL(COLUMN_COMMENT, '') AS columnComment
+FROM
+	information_schema.`COLUMNS`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+AND TABLE_NAME = 'oss_base_area'
+[2018-08-14 17:43:06]: 查到的数据: [OrderedDict([('columnName', 'appenduserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'appendtime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifyuserid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'modifytime'), ('isNull', 'NO'), ('columnType', 'int(11)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'effect'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'sysid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联系统id\r\nnull、 本系统默认数据')]), OrderedDict([('columnName', 'orgid'), ('isNull', 'YES'), ('columnType', 'int(11) unsigned'), ('isKey', ''), ('columnComment', '关联公司id')]), OrderedDict([('columnName', 'active'), ('isNull', 'NO'), ('columnType', 'tinyint(1) unsigned'), ('isKey', ''), ('columnComment', '0、未启用\r\n1、启用\r\n\r\n受effect的置0约束')]), OrderedDict([('columnName', 'id'), ('isNull', 'NO'), ('columnType', 'int(11) unsigned'), ('isKey', 'YES'), ('columnComment', '')]), OrderedDict([('columnName', 'code'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pid'), ('isNull', 'NO'), ('columnType', 'bigint(13)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'level'), ('isNull', 'NO'), ('columnType', 'tinyint(2)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'name'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'pinyin'), ('isNull', 'YES'), ('columnType', 'varchar(200)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'spinyin'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'postcode'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'longitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'latitude'), ('isNull', 'YES'), ('columnType', 'varchar(20)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'fullname'), ('isNull', 'YES'), ('columnType', 'varchar(255)'), ('isKey', ''), ('columnComment', '')]), OrderedDict([('columnName', 'simplename'), ('isNull', 'YES'), ('columnType', 'varchar(10)'), ('isKey', ''), ('columnComment', '')])]
+[2018-08-14 17:43:06]: 得到的各列元素最长值为: {'columnName': 12, 'columnType': 19, 'isKey': 5, 'columnComment': 27, 'isNull': 6}
+[2018-08-14 17:43:06]: do_myself.oss_base_area导出成功
+[2018-08-14 17:43:06]: *****导出完成*****
+[2018-08-14 17:43:06]: 导出耗时: 0.7786s
+[2018-08-14 17:44:19]: press in 5006-退出
+[2018-08-14 17:44:20]: press in 302-确定
+[2018-08-14 17:44:20]: booleanGetTailExit: True
+[2018-08-14 17:44:20]: threading event is set, 线程将退出
+[2018-08-14 17:44:20]: 数据库连接已关闭
+[2018-08-14 17:44:20]: 程序退出

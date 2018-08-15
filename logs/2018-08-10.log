@@ -1,0 +1,78 @@
+[2018-08-10 16:52:16]: logs\文件夹不存在,已自动创建
+[2018-08-10 16:52:16]: =================
+[2018-08-10 16:52:16]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-10 16:52:16]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-10 16:52:16]: 检测结果intIndex: 1
+[2018-08-10 16:52:16]: conf\文件夹不存在,已自动创建
+[2018-08-10 16:52:16]: 配置文件已初始化完成(conf\dbp.conf)
+[2018-08-10 16:52:16]: 执行启动界面...
+[2018-08-10 16:52:16]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-10 16:52:17]: 子线程thread-log已启动
+[2018-08-10 16:52:32]: press in 101-连接
+[2018-08-10 16:52:32]: 配置文件中读取到的配置有: {'host': '', 'user': '', 'ExportConfigure': ['# export file name and path', 'path', 'name', 'type'], 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '', 'type': 'md', 'name': 'test', 'password': '', 'MysqlConfigure': ['# mysql connection', 'host', 'port', 'user', 'password']}
+[2018-08-10 16:52:35]: press in 102-设置
+[2018-08-10 16:52:35]: 配置文件中读取到的配置有: {'host': '', 'user': '', 'ExportConfigure': ['# export file name and path', 'path', 'name', 'type'], 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '', 'type': 'md', 'name': 'test', 'password': '', 'MysqlConfigure': ['# mysql connection', 'host', 'port', 'user', 'password']}
+[2018-08-10 16:52:39]: press in 102-设置
+[2018-08-10 16:52:40]: 配置文件中读取到的配置有: {'host': '', 'user': '', 'ExportConfigure': ['# export file name and path', 'path', 'name', 'type'], 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '', 'type': 'md', 'name': 'test', 'password': '', 'MysqlConfigure': ['# mysql connection', 'host', 'port', 'user', 'password']}
+[2018-08-10 16:52:42]: press in 5006-退出
+[2018-08-10 16:52:43]: press in 302-选择框确定
+[2018-08-10 16:52:43]: booleanGetTailExit: True
+[2018-08-10 16:52:43]: threading event is set, 线程将退出
+[2018-08-10 16:52:44]: 程序退出
+[2018-08-10 16:55:23]: 日志文件: logs\2018-08-10.log
+[2018-08-10 16:55:23]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-10 16:55:23]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-10 16:55:23]: 检测结果intIndex: 1
+[2018-08-10 16:55:23]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-10 16:55:23]: 执行启动界面...
+[2018-08-10 16:55:23]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-10 16:55:23]: 子线程thread-log已启动
+[2018-08-10 16:55:32]: press in 101-连接
+[2018-08-10 16:55:32]: 配置文件中读取到的配置有: {'port': '', 'name': 'test', 'type': 'md', 'password': '', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '', 'user': ''}
+[2018-08-10 16:55:45]: press in 207-取消
+[2018-08-10 16:55:48]: press in 5006-退出
+[2018-08-10 16:55:50]: press in 302-选择框确定
+[2018-08-10 16:55:50]: booleanGetTailExit: True
+[2018-08-10 16:55:50]: threading event is set, 线程将退出
+[2018-08-10 16:55:50]: 程序退出
+[2018-08-10 17:13:04]: 日志文件: logs\2018-08-10.log
+[2018-08-10 17:13:04]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-10 17:13:04]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-10 17:13:04]: 检测结果intIndex: 1
+[2018-08-10 17:13:04]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-10 17:13:04]: 执行启动界面...
+[2018-08-10 17:13:04]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-10 17:13:04]: 子线程thread-log已启动
+[2018-08-10 17:13:08]: press in 101-连接
+[2018-08-10 17:13:08]: 配置文件中读取到的配置有: {'name': 'test', 'user': '', 'host': '', 'port': '', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'password': '', 'type': 'md'}
+[2018-08-10 17:13:27]: press in 206-确定
+[2018-08-10 17:13:28]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-10 17:13:28]: 连接出错
+[2018-08-10 17:13:28]: 数据库连接出错
+[2018-08-10 17:13:31]: press in 301-消息确定
+[2018-08-10 17:14:13]: press in 5006-退出
+[2018-08-10 17:14:14]: press in 302-选择框确定
+[2018-08-10 17:14:14]: booleanGetTailExit: True
+[2018-08-10 17:14:14]: threading event is set, 线程将退出
+[2018-08-10 17:14:15]: 程序退出
+[2018-08-10 17:14:16]: 日志文件: logs\2018-08-10.log
+[2018-08-10 17:14:17]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-10 17:14:17]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-10 17:14:17]: 检测结果intIndex: 1
+[2018-08-10 17:14:17]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-10 17:14:17]: 执行启动界面...
+[2018-08-10 17:14:17]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-10 17:14:17]: 子线程thread-log已启动
+[2018-08-10 17:14:19]: press in 101-连接
+[2018-08-10 17:14:19]: 配置文件中读取到的配置有: {'user': '', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '', 'name': 'test', 'password': '', 'host': ''}
+[2018-08-10 17:14:32]: press in 206-确定
+[2018-08-10 17:14:33]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-10 17:14:34]: 连接出错
+[2018-08-10 17:14:34]: 数据库连接出错
+[2018-08-10 17:14:35]: press in 301-消息确定
+[2018-08-10 17:14:38]: press in 207-取消
+[2018-08-10 17:17:21]: press in 5006-退出
+[2018-08-10 17:17:22]: press in 302-选择框确定
+[2018-08-10 17:17:22]: booleanGetTailExit: True
+[2018-08-10 17:17:22]: threading event is set, 线程将退出
+[2018-08-10 17:17:22]: 程序退出

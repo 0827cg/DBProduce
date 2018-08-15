@@ -1,0 +1,344 @@
+[2018-08-13 15:39:14]: 日志文件: logs\2018-08-13.log
+[2018-08-13 15:39:17]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 15:39:17]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 15:39:17]: 检测结果intIndex: 1
+[2018-08-13 15:39:17]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 15:39:17]: 执行启动界面...
+[2018-08-13 15:39:18]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 15:39:18]: 子线程thread-log已启动
+[2018-08-13 15:39:26]: press in 104-全选
+[2018-08-13 15:39:26]: 全选个数: 0
+[2018-08-13 15:39:26]: press in 105-反选
+[2018-08-13 15:39:26]: 反选个数: 0
+[2018-08-13 15:39:28]: press in 101-连接
+[2018-08-13 15:39:28]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '', 'password': '', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '', 'user': ''}
+[2018-08-13 15:39:31]: press in 207-取消
+[2018-08-13 15:39:49]: press in 101-连接
+[2018-08-13 15:39:49]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '', 'password': '', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '', 'user': ''}
+[2018-08-13 15:40:05]: press in 206-确定
+[2018-08-13 15:40:06]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-13 15:40:06]: 连接出错
+[2018-08-13 15:40:06]: 数据库连接失败
+[2018-08-13 15:40:08]: press in 301-消息确定
+[2018-08-13 15:40:12]: press in 206-确定
+[2018-08-13 15:40:13]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-13 15:40:13]: 连接出错
+[2018-08-13 15:40:13]: 数据库连接失败
+[2018-08-13 15:40:14]: press in 301-消息确定
+[2018-08-13 15:40:17]: press in 206-确定
+[2018-08-13 15:40:18]: 数据库已连接
+[2018-08-13 15:40:18]: 数据库连接成功
+[2018-08-13 15:40:18]: [MysqlConfigure]发生更改的配置项如下: 
+[2018-08-13 15:40:18]: user: root
+[2018-08-13 15:40:18]: port: 3306
+[2018-08-13 15:40:18]: password: cg082702
+[2018-08-13 15:40:18]: host: 127.0.0.1
+[2018-08-13 15:40:18]: 已经更新修改: [MysqlConfigure]配置块
+[2018-08-13 15:40:18]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 15:40:18]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 15:40:18]: 查询得到的库的个数: 10
+[2018-08-13 15:40:18]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 15:40:18]: 总共元素个数为: 10
+[2018-08-13 15:40:22]: 下拉框选择: do_myself
+[2018-08-13 15:40:23]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'do_myself'
+[2018-08-13 15:40:23]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-13 15:40:23]: 查询得到的表个数: 7
+[2018-08-13 15:40:23]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-13 15:40:23]: 总共元素个数为: 7
+[2018-08-13 15:40:36]: press in 104-全选
+[2018-08-13 15:40:36]: 全选个数: 7
+[2018-08-13 15:40:36]: press in 105-反选
+[2018-08-13 15:40:36]: 反选个数: 7
+[2018-08-13 15:40:37]: press in 104-全选
+[2018-08-13 15:40:37]: 全选个数: 7
+[2018-08-13 15:40:38]: press in 105-反选
+[2018-08-13 15:40:38]: 反选个数: 7
+[2018-08-13 15:40:42]: press in 101-连接
+[2018-08-13 15:40:42]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '3306', 'password': 'cg082702', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'user': 'root'}
+[2018-08-13 15:40:44]: press in 207-取消
+[2018-08-13 15:40:46]: press in 5006-退出
+[2018-08-13 15:40:46]: press in 302-选择框确定
+[2018-08-13 15:40:46]: booleanGetTailExit: True
+[2018-08-13 15:40:46]: threading event is set, 线程将退出
+[2018-08-13 15:40:47]: 数据库连接已关闭
+[2018-08-13 15:40:47]: 程序退出
+[2018-08-13 15:47:04]: 日志文件: logs\2018-08-13.log
+[2018-08-13 15:47:05]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 15:47:05]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 15:47:05]: 检测结果intIndex: 1
+[2018-08-13 15:47:05]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 15:47:05]: 执行启动界面...
+[2018-08-13 15:47:05]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 15:47:05]: 子线程thread-log已启动
+[2018-08-13 15:47:08]: press in 101-连接
+[2018-08-13 15:47:08]: 配置文件中读取到的配置有: {'password': 'cg082702', 'host': '127.0.0.1', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'name': 'test', 'port': '3306', 'type': 'md'}
+[2018-08-13 15:47:11]: press in 207-取消
+[2018-08-13 15:53:03]: press in 5006-退出
+[2018-08-13 15:53:04]: press in 302-选择框确定
+[2018-08-13 15:53:04]: booleanGetTailExit: True
+[2018-08-13 15:53:04]: threading event is set, 线程将退出
+[2018-08-13 15:53:04]: 程序退出
+[2018-08-13 15:53:06]: 日志文件: logs\2018-08-13.log
+[2018-08-13 15:53:06]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 15:53:06]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 15:53:06]: 检测结果intIndex: 1
+[2018-08-13 15:53:06]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 15:53:06]: 执行启动界面...
+[2018-08-13 15:53:07]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 15:53:07]: 子线程thread-log已启动
+[2018-08-13 15:53:09]: press in 101-连接
+[2018-08-13 15:53:09]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'password': 'cg082702'}
+[2018-08-13 15:53:17]: press in 206-确定
+[2018-08-13 15:53:17]: 数据库已连接
+[2018-08-13 15:53:17]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000002CBE198B748>
+[2018-08-13 15:53:17]: 数据库连接成功
+[2018-08-13 15:53:17]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 15:53:17]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 15:53:17]: 查询得到的库的个数: 10
+[2018-08-13 15:53:17]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 15:53:17]: 总共元素个数为: 10
+[2018-08-13 15:53:19]: press in 103-关于工具
+[2018-08-13 15:53:21]: press in 301-消息确定
+[2018-08-13 15:53:22]: press in 101-连接
+[2018-08-13 15:53:22]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'password': 'cg082702'}
+[2018-08-13 15:53:49]: press in 207-取消
+[2018-08-13 15:53:57]: press in 101-连接
+[2018-08-13 15:53:57]: 配置文件中读取到的配置有: {'name': 'test', 'type': 'md', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'password': 'cg082702'}
+[2018-08-13 15:54:01]: press in 5006-退出
+[2018-08-13 15:54:02]: press in 302-选择框确定
+[2018-08-13 15:54:02]: booleanGetTailExit: True
+[2018-08-13 15:54:02]: threading event is set, 线程将退出
+[2018-08-13 15:54:02]: 数据库连接已关闭
+[2018-08-13 15:54:02]: 程序退出
+[2018-08-13 16:00:25]: 日志文件: logs\2018-08-13.log
+[2018-08-13 16:00:25]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 16:00:25]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 16:00:25]: 检测结果intIndex: 1
+[2018-08-13 16:00:25]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 16:00:25]: 执行启动界面...
+[2018-08-13 16:00:25]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 16:00:25]: 子线程thread-log已启动
+[2018-08-13 16:00:32]: press in 101-连接
+[2018-08-13 16:00:32]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'port': '3306', 'name': 'test', 'password': 'cg082702'}
+[2018-08-13 16:00:35]: press in 206-确定
+[2018-08-13 16:00:35]: 数据库已连接
+[2018-08-13 16:00:35]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x00000204926E7550>
+[2018-08-13 16:00:35]: 数据库连接成功
+[2018-08-13 16:00:35]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 16:00:35]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 16:00:35]: 查询得到的库的个数: 10
+[2018-08-13 16:00:35]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 16:00:36]: 总共元素个数为: 10
+[2018-08-13 16:00:38]: press in 101-连接
+[2018-08-13 16:00:38]: 配置文件中读取到的配置有: {'user': 'root', 'type': 'md', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'host': '127.0.0.1', 'port': '3306', 'name': 'test', 'password': 'cg082702'}
+[2018-08-13 16:00:52]: press in 207-取消
+[2018-08-13 16:00:54]: press in 5006-退出
+[2018-08-13 16:00:56]: press in 302-选择框确定
+[2018-08-13 16:00:56]: booleanGetTailExit: True
+[2018-08-13 16:00:56]: threading event is set, 线程将退出
+[2018-08-13 16:00:56]: 数据库连接已关闭
+[2018-08-13 16:00:56]: 程序退出
+[2018-08-13 16:03:34]: 日志文件: logs\2018-08-13.log
+[2018-08-13 16:03:34]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 16:03:34]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 16:03:34]: 检测结果intIndex: 1
+[2018-08-13 16:03:34]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 16:03:34]: 执行启动界面...
+[2018-08-13 16:03:35]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 16:03:35]: 子线程thread-log已启动
+[2018-08-13 16:03:36]: press in 101-连接
+[2018-08-13 16:03:36]: 配置文件中读取到的配置有: {'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'name': 'test', 'host': '127.0.0.1', 'password': 'cg082702', 'port': '3306', 'type': 'md'}
+[2018-08-13 16:03:38]: press in 207-取消
+[2018-08-13 16:03:40]: press in 5006-退出
+[2018-08-13 16:03:41]: press in 302-选择框确定
+[2018-08-13 16:03:41]: booleanGetTailExit: True
+[2018-08-13 16:03:41]: threading event is set, 线程将退出
+[2018-08-13 16:03:41]: 程序退出
+[2018-08-13 16:11:58]: 日志文件: logs\2018-08-13.log
+[2018-08-13 16:11:58]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 16:11:58]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 16:11:58]: 检测结果intIndex: 1
+[2018-08-13 16:11:59]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 16:11:59]: 执行启动界面...
+[2018-08-13 16:11:59]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 16:11:59]: 子线程thread-log已启动
+[2018-08-13 16:12:00]: press in 101-连接
+[2018-08-13 16:12:01]: 配置文件中读取到的配置有: {'user': 'root', 'password': 'cg082702', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md', 'name': 'test', 'host': '127.0.0.1'}
+[2018-08-13 16:12:02]: press in 207-取消
+[2018-08-13 16:12:04]: press in 5006-退出
+[2018-08-13 16:12:06]: press in 302-选择框确定
+[2018-08-13 16:12:06]: booleanGetTailExit: True
+[2018-08-13 16:12:06]: threading event is set, 线程将退出
+[2018-08-13 16:12:06]: 程序退出
+[2018-08-13 16:14:09]: 日志文件: logs\2018-08-13.log
+[2018-08-13 16:14:09]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 16:14:09]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 16:14:09]: 检测结果intIndex: 1
+[2018-08-13 16:14:09]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 16:14:09]: 执行启动界面...
+[2018-08-13 16:14:09]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 16:14:09]: 子线程thread-log已启动
+[2018-08-13 16:14:11]: press in 101-连接
+[2018-08-13 16:14:11]: 配置文件中读取到的配置有: {'name': 'test', 'host': '127.0.0.1', 'user': 'root', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md', 'password': 'cg082702'}
+[2018-08-13 16:14:14]: press in 206-确定
+[2018-08-13 16:14:14]: 数据库已连接
+[2018-08-13 16:14:14]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001C22ED1D2B0>
+[2018-08-13 16:14:14]: 数据库连接成功
+[2018-08-13 16:14:14]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 16:14:14]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 16:14:14]: 查询得到的库的个数: 10
+[2018-08-13 16:14:14]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 16:14:14]: 总共元素个数为: 10
+[2018-08-13 16:14:16]: press in 101-连接
+[2018-08-13 16:14:16]: 配置文件中读取到的配置有: {'name': 'test', 'host': '127.0.0.1', 'user': 'root', 'port': '3306', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md', 'password': 'cg082702'}
+[2018-08-13 16:14:26]: press in 207-取消
+[2018-08-13 16:15:11]: press in 5006-退出
+[2018-08-13 16:15:12]: press in 302-选择框确定
+[2018-08-13 16:15:12]: booleanGetTailExit: True
+[2018-08-13 16:15:12]: threading event is set, 线程将退出
+[2018-08-13 16:15:12]: 数据库连接已关闭
+[2018-08-13 16:15:12]: 程序退出
+[2018-08-13 17:47:05]: 日志文件: logs\2018-08-13.log
+[2018-08-13 17:47:05]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 17:47:05]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 17:47:05]: 检测结果intIndex: 1
+[2018-08-13 17:47:05]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 17:47:05]: 执行启动界面...
+[2018-08-13 17:47:06]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 17:47:06]: 子线程thread-log已启动
+[2018-08-13 17:47:09]: press in 101-连接
+[2018-08-13 17:47:09]: 配置文件中读取到的配置有: {'host': '127.0.0.1', 'name': 'test', 'password': 'cg082702', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'type': 'md'}
+[2018-08-13 17:47:12]: press in 206-确定
+[2018-08-13 17:47:12]: 数据库已连接
+[2018-08-13 17:47:12]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001F606E4D358>
+[2018-08-13 17:47:12]: 数据库连接成功
+[2018-08-13 17:47:12]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 17:47:12]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 17:47:12]: 查询得到的库的个数: 10
+[2018-08-13 17:47:12]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 17:47:12]: 总共元素个数为: 10
+[2018-08-13 17:47:18]: press in 5006-退出
+[2018-08-13 17:47:19]: press in 302-选择框确定
+[2018-08-13 17:47:19]: booleanGetTailExit: True
+[2018-08-13 17:47:19]: threading event is set, 线程将退出
+[2018-08-13 17:47:19]: 数据库连接已关闭
+[2018-08-13 17:47:19]: 程序退出
+[2018-08-13 17:48:30]: 日志文件: logs\2018-08-13.log
+[2018-08-13 17:48:30]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 17:48:30]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 17:48:30]: 检测结果intIndex: 1
+[2018-08-13 17:48:30]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 17:48:30]: 执行启动界面...
+[2018-08-13 17:48:30]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 17:48:30]: 子线程thread-log已启动
+[2018-08-13 17:48:32]: press in 101-连接
+[2018-08-13 17:48:32]: 配置文件中读取到的配置有: {'host': '127.0.0.1', 'password': 'cg082702', 'name': 'test', 'type': 'md', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/'}
+[2018-08-13 17:48:33]: press in 205-测试连接
+[2018-08-13 17:48:33]: 数据库已连接
+[2018-08-13 17:48:33]: 连接已断开
+[2018-08-13 17:48:44]: press in 301-消息确定
+[2018-08-13 17:48:45]: press in 206-确定
+[2018-08-13 17:48:46]: 数据库已连接
+[2018-08-13 17:48:46]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x0000018C41CFC2E8>
+[2018-08-13 17:48:46]: 数据库连接成功
+[2018-08-13 17:48:46]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-13 17:48:46]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-13 17:48:46]: 查询得到的库的个数: 10
+[2018-08-13 17:48:46]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-13 17:48:46]: 总共元素个数为: 10
+[2018-08-13 17:48:48]: press in 101-连接
+[2018-08-13 17:48:48]: 配置文件中读取到的配置有: {'host': '127.0.0.1', 'password': 'cg082702', 'name': 'test', 'type': 'md', 'port': '3306', 'user': 'root', 'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/'}
+[2018-08-13 17:48:55]: press in 207-取消
+[2018-08-13 17:48:56]: press in 5006-退出
+[2018-08-13 17:48:57]: press in 302-选择框确定
+[2018-08-13 17:48:57]: booleanGetTailExit: True
+[2018-08-13 17:48:57]: threading event is set, 线程将退出
+[2018-08-13 17:48:58]: 数据库连接已关闭
+[2018-08-13 17:48:58]: 程序退出
+[2018-08-13 17:54:22]: 日志文件: logs\2018-08-13.log
+[2018-08-13 17:54:22]: 检测到已经安装wxPython模块, 将判断系统是否有桌面环境
+[2018-08-13 17:54:23]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-13 17:54:23]: 检测结果intIndex: 1
+[2018-08-13 17:54:23]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-13 17:54:23]: 执行启动界面...
+[2018-08-13 17:54:23]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-13 17:54:23]: 子线程thread-log已启动
+[2018-08-13 17:54:25]: press in 101-连接
+[2018-08-13 17:54:26]: 配置文件中读取到的配置有: {'path': 'D:\\PythonWork\\from-pycharm\\DBProduce-file\\180810\\DBProduce/g/dngdosng/', 'port': '3306', 'type': 'md', 'password': 'cg082702', 'user': 'root', 'host': '127.0.0.1', 'name': 'test'}
+[2018-08-13 17:54:27]: press in 207取消
+[2018-08-13 17:54:33]: press in 5006-退出
+[2018-08-13 17:54:36]: press in 302-选择框确定
+[2018-08-13 17:54:36]: booleanGetTailExit: True
+[2018-08-13 17:54:36]: threading event is set, 线程将退出
+[2018-08-13 17:54:36]: 程序退出
