@@ -11,7 +11,7 @@ class SetDialog(wx.Dialog):
 
     # 设置界面弹框
 
-    def __init__(self, parentObj, strTitle, intWidth=290, intHeight=220):
+    def __init__(self, parentObj, strTitle, intWidth=290, intHeight=210):
         super(SetDialog, self).__init__(parentObj, title=strTitle)
 
         self.setDialogControllObj = SetDialogControll(self, parentObj)
@@ -70,7 +70,7 @@ class SetDialog(wx.Dialog):
         treeRoot = treeCtrlObj.AddRoot('Setting')
         treeRootOutput = treeCtrlObj.AppendItem(treeRoot, '导出')
         #
-        treeCtrlObj.AppendItem(treeRootOutput, 'Linux')
+        # treeCtrlObj.AppendItem(treeRootOutput, 'Linux')
 
         # staticTextHintObj = wx.StaticText(panelMasterObj, label='导出')
         boxSetItemObj.Add(treeCtrlObj, 0, flag=wx.TOP | wx.EXPAND, border=0)

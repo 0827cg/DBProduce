@@ -55,7 +55,8 @@ class ProFrameControll(DBPObject):
             dialogSelfObj.showChooseUI()
 
         elif intId == 103:
-            DialogSelf(self.parentObj, '关于', ' author: cg \n version: v1.0.0', intHeight=126).showMessageUI()
+            DialogSelf(self.parentObj, '关于', ' author: cg \n email: 1732821152@qq.com \n version: v1.0.0',
+                       intHeight=143).showMessageUI()
 
         else:
             self.logUtilObj.writerLog('press in ' + str(intId) + '-未给id= ' + str(intId) + '的菜单组件分配方法')
