@@ -5,7 +5,7 @@
 程序运行截屏:
 
 
-![image](https://github.com/cgstudios/DBProduce/img/img-win-readme.png)
+![image](https://github.com/cgstudios/DBProduce/blob/master/img/img-win-readme.png)
 
 
 用到的模块
