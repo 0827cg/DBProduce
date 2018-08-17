@@ -1,0 +1,246 @@
+[2018-08-17 09:03:09]: 日志文件: logs\2018-08-17.log
+[2018-08-17 09:03:11]: 检测到系统中已经安装wx模块
+[2018-08-17 09:03:11]: 检测到系统中已经安装pymysql模块
+[2018-08-17 09:03:11]: 执行环境完全, 将选择启动程序
+[2018-08-17 09:03:11]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-17 09:03:11]: 检测结果intIndex: 1
+[2018-08-17 09:03:11]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-17 09:03:11]: 执行启动界面...
+[2018-08-17 09:03:11]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-17 09:03:11]: 子线程thread-log已启动
+[2018-08-17 09:03:34]: press in 101-连接
+[2018-08-17 09:03:34]: 配置文件中读取到的配置有: {'name': 'test-180814-1', 'user': 'haotuoguan', 'port': '33066', 'password': 'haotuoguan123456', 'path': 'D:\\Test\\export\\DBProduce', 'host': '172.16.0.9', 'type': 'md'}
+[2018-08-17 09:03:37]: press in 206-确定
+[2018-08-17 09:03:37]: 数据库已连接
+[2018-08-17 09:03:37]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x00000223139AC2B0>
+[2018-08-17 09:03:37]: 数据库连接成功
+[2018-08-17 09:03:38]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-17 09:03:38]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'htg-dev')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'rap2_delos_app')]), OrderedDict([('databaseName', 'test')])]
+[2018-08-17 09:03:38]: 查询得到的库的个数: 6
+[2018-08-17 09:03:38]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'htg-dev', 'mysql', 'performance_schema', 'rap2_delos_app', 'test']
+[2018-08-17 09:03:38]: 总共元素个数为: 6
+[2018-08-17 09:03:41]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:03:49]: press in 5006-退出
+[2018-08-17 09:03:50]: press in 302-确定
+[2018-08-17 09:03:50]: booleanGetTailExit: True
+[2018-08-17 09:03:50]: threading event is set, 线程将退出
+[2018-08-17 09:03:50]: 数据库连接已关闭
+[2018-08-17 09:03:51]: 程序退出
+[2018-08-17 09:10:46]: 日志文件: logs\2018-08-17.log
+[2018-08-17 09:10:46]: 检测到系统中已经安装wx模块
+[2018-08-17 09:10:46]: 检测到系统中已经安装pymysql模块
+[2018-08-17 09:10:46]: 执行环境完全, 将选择启动程序
+[2018-08-17 09:10:46]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-17 09:10:46]: 检测结果intIndex: 1
+[2018-08-17 09:10:46]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-17 09:10:46]: 执行启动界面...
+[2018-08-17 09:10:46]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-17 09:10:46]: 子线程thread-log已启动
+[2018-08-17 09:10:52]: press in 101-连接
+[2018-08-17 09:10:52]: 配置文件中读取到的配置有: {'name': 'test-180814-1', 'path': 'D:\\Test\\export\\DBProduce', 'port': '33066', 'user': 'haotuoguan', 'host': '172.16.0.9', 'type': 'md', 'password': 'haotuoguan123456'}
+[2018-08-17 09:11:01]: press in 205-测试连接
+[2018-08-17 09:11:01]: 断开前 self.intGetDatabaseResult: 0
+[2018-08-17 09:11:01]: 数据库已连接
+[2018-08-17 09:11:01]: 连接已断开
+[2018-08-17 09:11:10]: press in 301-确定
+[2018-08-17 09:11:17]: press in 206-确定
+[2018-08-17 09:11:18]: 数据库已连接
+[2018-08-17 09:11:18]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001D8316DFC50>
+[2018-08-17 09:11:18]: 数据库连接成功
+[2018-08-17 09:11:18]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-17 09:11:18]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'htg-dev')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'rap2_delos_app')]), OrderedDict([('databaseName', 'test')])]
+[2018-08-17 09:11:18]: 查询得到的库的个数: 6
+[2018-08-17 09:11:18]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'htg-dev', 'mysql', 'performance_schema', 'rap2_delos_app', 'test']
+[2018-08-17 09:11:18]: 总共元素个数为: 6
+[2018-08-17 09:11:18]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-08-17 09:11:30]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:11:30]: CloseUp self.intGetDatabaseResult: 1
+[2018-08-17 09:11:40]: 下拉框选择: htg-dev
+[2018-08-17 09:11:40]: 执行数据库查询语句: /*
+describe: get total table name from database
+author: cg
+create time: 2018-06-12
+*/
+
+SELECT
+	TABLE_NAME AS tableName
+FROM
+	information_schema.`TABLES`
+WHERE
+	TABLE_SCHEMA = 'htg-dev'
+[2018-08-17 09:11:40]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll')]), OrderedDict([('tableName', 'htg_app_message')]), OrderedDict([('tableName', 'htg_avatar_record')]), OrderedDict([('tableName', 'htg_banner_config')]), OrderedDict([('tableName', 'htg_campus_balance')]), OrderedDict([('tableName', 'htg_campus_daily_situtation')]), OrderedDict([('tableName', 'htg_campus_detail')]), OrderedDict([('tableName', 'htg_campus_order')]), OrderedDict([('tableName', 'htg_campus_voucher')]), OrderedDict([('tableName', 'htg_card')]), OrderedDict([('tableName', 'htg_childcare_enroll')]), OrderedDict([('tableName', 'htg_childcare_sign')]), OrderedDict([('tableName', 'htg_comments')]), OrderedDict([('tableName', 'htg_comments_action')]), OrderedDict([('tableName', 'htg_comments_marker')]), OrderedDict([('tableName', 'htg_comments_relation')]), OrderedDict([('tableName', 'htg_comments_remark')]), OrderedDict([('tableName', 'htg_comments_remark_type')]), OrderedDict([('tableName', 'htg_common_buttons')]), OrderedDict([('tableName', 'htg_common_menus')]), OrderedDict([('tableName', 'htg_common_persistent_logins')]), OrderedDict([('tableName', 'htg_common_role_menus_buttons')]), OrderedDict([('tableName', 'htg_common_roles')]), OrderedDict([('tableName', 'htg_common_users_roles')]), OrderedDict([('tableName', 'htg_config')]), OrderedDict([('tableName', 'htg_cookbook_record')]), OrderedDict([('tableName', 'htg_cost_call')]), OrderedDict([('tableName', 'htg_course')]), OrderedDict([('tableName', 'htg_course_enroll')]), OrderedDict([('tableName', 'htg_course_sign')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_demo')]), OrderedDict([('tableName', 'htg_device_open_history')]), OrderedDict([('tableName', 'htg_ez_device')]), OrderedDict([('tableName', 'htg_ez_device_config')]), OrderedDict([('tableName', 'htg_face')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_facepp_user_facetoken')]), OrderedDict([('tableName', 'htg_fda_check_content')]), OrderedDict([('tableName', 'htg_fda_check_history')]), OrderedDict([('tableName', 'htg_fda_check_history_detail')]), OrderedDict([('tableName', 'htg_fda_check_status')]), OrderedDict([('tableName', 'htg_fda_check_type')]), OrderedDict([('tableName', 'htg_fda_users')]), OrderedDict([('tableName', 'htg_growup')]), OrderedDict([('tableName', 'htg_growup_action')]), OrderedDict([('tableName', 'htg_growup_comment')]), OrderedDict([('tableName', 'htg_growup_member')]), OrderedDict([('tableName', 'htg_hold_device')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_huanbi_workshop_assignment')]), OrderedDict([('tableName', 'htg_huanbi_workshop_integral')]), OrderedDict([('tableName', 'htg_huanbi_workshop_integral_config')]), OrderedDict([('tableName', 'htg_huanbi_workshop_integral_history')]), OrderedDict([('tableName', 'htg_huanbi_workshop_renewal')]), OrderedDict([('tableName', 'htg_huanbi_workshop_reward')]), OrderedDict([('tableName', 'htg_huanbi_workshop_score')]), OrderedDict([('tableName', 'htg_huanbi_workshop_sign')]), OrderedDict([('tableName', 'htg_huanbi_workshop_summary')]), OrderedDict([('tableName', 'htg_in_device')]), OrderedDict([('tableName', 'htg_in_device_msg')]), OrderedDict([('tableName', 'htg_in_device_sign_config')]), OrderedDict([('tableName', 'htg_in_device_status_log')]), OrderedDict([('tableName', 'htg_in_device_version')]), OrderedDict([('tableName', 'htg_instalment_recharge')]), OrderedDict([('tableName', 'htg_instalment_restitution')]), OrderedDict([('tableName', 'htg_integral')]), OrderedDict([('tableName', 'htg_integral_gift')]), OrderedDict([('tableName', 'htg_integral_user_relation')]), OrderedDict([('tableName', 'htg_integral_value_config')]), OrderedDict([('tableName', 'htg_menu_config')]), OrderedDict([('tableName', 'htg_menu_user_relation')]), OrderedDict([('tableName', 'htg_message_status')]), OrderedDict([('tableName', 'htg_mp_weixin')]), OrderedDict([('tableName', 'htg_mp_weixin_org_shop_relation')]), OrderedDict([('tableName', 'htg_mp_weixin_template')]), OrderedDict([('tableName', 'htg_nearby_campus')]), OrderedDict([('tableName', 'htg_news')]), OrderedDict([('tableName', 'htg_news_article')]), OrderedDict([('tableName', 'htg_news_audio')]), OrderedDict([('tableName', 'htg_news_video')]), OrderedDict([('tableName', 'htg_nvr_device')]), OrderedDict([('tableName', 'htg_nvr_device_config')]), OrderedDict([('tableName', 'htg_org')]), OrderedDict([('tableName', 'htg_org_check_level')]), OrderedDict([('tableName', 'htg_org_mp_weixin_relation')]), OrderedDict([('tableName', 'htg_org_preregister')]), OrderedDict([('tableName', 'htg_org_user_relation')]), OrderedDict([('tableName', 'htg_oss_base_area')]), OrderedDict([('tableName', 'htg_platform_relation')]), OrderedDict([('tableName', 'htg_pre_school')]), OrderedDict([('tableName', 'htg_pre_school_action')]), OrderedDict([('tableName', 'htg_pre_school_feedback')]), OrderedDict([('tableName', 'htg_pre_school_marker')]), OrderedDict([('tableName', 'htg_pre_school_relation')]), OrderedDict([('tableName', 'htg_pre_school_remark')]), OrderedDict([('tableName', 'htg_pre_school_remark_type')]), OrderedDict([('tableName', 'htg_pre_sign_up')]), OrderedDict([('tableName', 'htg_recharge_config')]), OrderedDict([('tableName', 'htg_record')]), OrderedDict([('tableName', 'htg_record_action')]), OrderedDict([('tableName', 'htg_record_comment')]), OrderedDict([('tableName', 'htg_record_member')]), OrderedDict([('tableName', 'htg_region_manager')]), OrderedDict([('tableName', 'htg_service_detail')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'htg_shop_license')]), OrderedDict([('tableName', 'htg_shop_user_license')]), OrderedDict([('tableName', 'htg_shop_user_relation')]), OrderedDict([('tableName', 'htg_sign_config')]), OrderedDict([('tableName', 'htg_sign_pic')]), OrderedDict([('tableName', 'htg_sign_time')]), OrderedDict([('tableName', 'htg_sms_history')]), OrderedDict([('tableName', 'htg_sms_verifycode')]), OrderedDict([('tableName', 'htg_student_grade')]), OrderedDict([('tableName', 'htg_student_infomation')]), OrderedDict([('tableName', 'htg_sunshine_food_sample')]), OrderedDict([('tableName', 'htg_sunshine_purchase_receipt')]), OrderedDict([('tableName', 'htg_sunshine_tableware_disinfect')]), OrderedDict([('tableName', 'htg_sure_advance')]), OrderedDict([('tableName', 'htg_sure_education')]), OrderedDict([('tableName', 'htg_sure_growth')]), OrderedDict([('tableName', 'htg_sure_habit')]), OrderedDict([('tableName', 'htg_user_manage')]), OrderedDict([('tableName', 'htg_user_role')]), OrderedDict([('tableName', 'htg_user_user_relation')]), OrderedDict([('tableName', 'htg_user_weixin')]), OrderedDict([('tableName', 'htg_user_weixin_org_relation')]), OrderedDict([('tableName', 'htg_users')]), OrderedDict([('tableName', 'htg_weixin_history')]), OrderedDict([('tableName', 'htg_z_balance')]), OrderedDict([('tableName', 'htg_z_bankcard')]), OrderedDict([('tableName', 'htg_z_config')]), OrderedDict([('tableName', 'htg_z_payorder')]), OrderedDict([('tableName', 'htg_z_spandorder')]), OrderedDict([('tableName', 'htg_z_uservoucher')]), OrderedDict([('tableName', 'htg_z_vouchertype')]), OrderedDict([('tableName', 'htg_z_withdraw')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-17 09:11:40]: 查询得到的表个数: 140
+[2018-08-17 09:11:40]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll', 'htg_app_message', 'htg_avatar_record', 'htg_banner_config', 'htg_campus_balance', 'htg_campus_daily_situtation', 'htg_campus_detail', 'htg_campus_order', 'htg_campus_voucher', 'htg_card', 'htg_childcare_enroll', 'htg_childcare_sign', 'htg_comments', 'htg_comments_action', 'htg_comments_marker', 'htg_comments_relation', 'htg_comments_remark', 'htg_comments_remark_type', 'htg_common_buttons', 'htg_common_menus', 'htg_common_persistent_logins', 'htg_common_role_menus_buttons', 'htg_common_roles', 'htg_common_users_roles', 'htg_config', 'htg_cookbook_record', 'htg_cost_call', 'htg_course', 'htg_course_enroll', 'htg_course_sign', 'htg_daily_service_base', 'htg_demo', 'htg_device_open_history', 'htg_ez_device', 'htg_ez_device_config', 'htg_face', 'htg_face_log', 'htg_facepp_user_facetoken', 'htg_fda_check_content', 'htg_fda_check_history', 'htg_fda_check_history_detail', 'htg_fda_check_status', 'htg_fda_check_type', 'htg_fda_users', 'htg_growup', 'htg_growup_action', 'htg_growup_comment', 'htg_growup_member', 'htg_hold_device', 'htg_holiday_date', 'htg_huanbi_workshop_assignment', 'htg_huanbi_workshop_integral', 'htg_huanbi_workshop_integral_config', 'htg_huanbi_workshop_integral_history', 'htg_huanbi_workshop_renewal', 'htg_huanbi_workshop_reward', 'htg_huanbi_workshop_score', 'htg_huanbi_workshop_sign', 'htg_huanbi_workshop_summary', 'htg_in_device', 'htg_in_device_msg', 'htg_in_device_sign_config', 'htg_in_device_status_log', 'htg_in_device_version', 'htg_instalment_recharge', 'htg_instalment_restitution', 'htg_integral', 'htg_integral_gift', 'htg_integral_user_relation', 'htg_integral_value_config', 'htg_menu_config', 'htg_menu_user_relation', 'htg_message_status', 'htg_mp_weixin', 'htg_mp_weixin_org_shop_relation', 'htg_mp_weixin_template', 'htg_nearby_campus', 'htg_news', 'htg_news_article', 'htg_news_audio', 'htg_news_video', 'htg_nvr_device', 'htg_nvr_device_config', 'htg_org', 'htg_org_check_level', 'htg_org_mp_weixin_relation', 'htg_org_preregister', 'htg_org_user_relation', 'htg_oss_base_area', 'htg_platform_relation', 'htg_pre_school', 'htg_pre_school_action', 'htg_pre_school_feedback', 'htg_pre_school_marker', 'htg_pre_school_relation', 'htg_pre_school_remark', 'htg_pre_school_remark_type', 'htg_pre_sign_up', 'htg_recharge_config', 'htg_record', 'htg_record_action', 'htg_record_comment', 'htg_record_member', 'htg_region_manager', 'htg_service_detail', 'htg_shop', 'htg_shop_license', 'htg_shop_user_license', 'htg_shop_user_relation', 'htg_sign_config', 'htg_sign_pic', 'htg_sign_time', 'htg_sms_history', 'htg_sms_verifycode', 'htg_student_grade', 'htg_student_infomation', 'htg_sunshine_food_sample', 'htg_sunshine_purchase_receipt', 'htg_sunshine_tableware_disinfect', 'htg_sure_advance', 'htg_sure_education', 'htg_sure_growth', 'htg_sure_habit', 'htg_user_manage', 'htg_user_role', 'htg_user_user_relation', 'htg_user_weixin', 'htg_user_weixin_org_relation', 'htg_users', 'htg_weixin_history', 'htg_z_balance', 'htg_z_bankcard', 'htg_z_config', 'htg_z_payorder', 'htg_z_spandorder', 'htg_z_uservoucher', 'htg_z_vouchertype', 'htg_z_withdraw', 'oss_base_area']
+[2018-08-17 09:11:40]: 总共元素个数为: 140
+[2018-08-17 09:11:40]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:11:40]: CloseUp self.intGetDatabaseResult: 1
+[2018-08-17 09:11:44]: press in 101-连接
+[2018-08-17 09:11:44]: 配置文件中读取到的配置有: {'name': 'test-180814-1', 'path': 'D:\\Test\\export\\DBProduce', 'port': '33066', 'user': 'haotuoguan', 'host': '172.16.0.9', 'type': 'md', 'password': 'haotuoguan123456'}
+[2018-08-17 09:11:45]: press in 205-断开连接
+[2018-08-17 09:11:45]: 断开前 self.intGetDatabaseResult: 1
+[2018-08-17 09:11:50]: press in 301-确定
+[2018-08-17 09:11:50]: 数据库连接已断开
+[2018-08-17 09:11:50]: searchValuesObj.connectionMysqlObjself: None
+[2018-08-17 09:12:12]: press in 207-取消
+[2018-08-17 09:13:02]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:13:02]: CloseUp self.intGetDatabaseResult: 0
+[2018-08-17 09:13:02]: 请先连接数据库
+[2018-08-17 09:13:04]: press in 301-确定
+[2018-08-17 09:13:07]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:13:07]: CloseUp self.intGetDatabaseResult: 0
+[2018-08-17 09:13:07]: 请先连接数据库
+[2018-08-17 09:13:08]: press in 301-确定
+[2018-08-17 09:13:10]: press in 101-连接
+[2018-08-17 09:13:10]: 配置文件中读取到的配置有: {'name': 'test-180814-1', 'path': 'D:\\Test\\export\\DBProduce', 'port': '33066', 'user': 'haotuoguan', 'host': '172.16.0.9', 'type': 'md', 'password': 'haotuoguan123456'}
+[2018-08-17 09:13:11]: press in 206-确定
+[2018-08-17 09:13:12]: 数据库已连接
+[2018-08-17 09:13:12]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000001D8317069E8>
+[2018-08-17 09:13:12]: 数据库连接成功
+[2018-08-17 09:13:12]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-17 09:13:12]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'htg-dev')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'rap2_delos_app')]), OrderedDict([('databaseName', 'test')])]
+[2018-08-17 09:13:12]: 查询得到的库的个数: 6
+[2018-08-17 09:13:12]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'htg-dev', 'mysql', 'performance_schema', 'rap2_delos_app', 'test']
+[2018-08-17 09:13:12]: 总共元素个数为: 6
+[2018-08-17 09:13:12]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-08-17 09:13:14]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:13:14]: CloseUp self.intGetDatabaseResult: 1
+[2018-08-17 09:13:21]: press in 5006-退出
+[2018-08-17 09:13:21]: press in 302-确定
+[2018-08-17 09:13:21]: booleanGetTailExit: True
+[2018-08-17 09:13:21]: threading event is set, 线程将退出
+[2018-08-17 09:13:22]: 数据库连接已关闭
+[2018-08-17 09:13:22]: 程序退出
+[2018-08-17 09:13:24]: 日志文件: logs\2018-08-17.log
+[2018-08-17 09:13:24]: 检测到系统中已经安装wx模块
+[2018-08-17 09:13:24]: 检测到系统中已经安装pymysql模块
+[2018-08-17 09:13:24]: 执行环境完全, 将选择启动程序
+[2018-08-17 09:13:24]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-17 09:13:24]: 检测结果intIndex: 1
+[2018-08-17 09:13:24]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-17 09:13:24]: 执行启动界面...
+[2018-08-17 09:13:24]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-17 09:13:24]: 子线程thread-log已启动
+[2018-08-17 09:13:30]: press in 101-连接
+[2018-08-17 09:13:30]: 配置文件中读取到的配置有: {'port': '33066', 'path': 'D:\\Test\\export\\DBProduce', 'password': 'haotuoguan123456', 'name': 'test-180814-1', 'host': '172.16.0.9', 'type': 'md', 'user': 'haotuoguan'}
+[2018-08-17 09:13:32]: press in 206-确定
+[2018-08-17 09:13:32]: 数据库已连接
+[2018-08-17 09:13:32]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x0000028609F2F7B8>
+[2018-08-17 09:13:32]: 数据库连接成功
+[2018-08-17 09:13:32]: 执行数据库查询语句: /*
+describe: get total database name
+author: cg
+create time: 2018-08-09
+*/
+
+
+SELECT
+	`SCHEMA_NAME` AS databaseName
+FROM
+	`information_schema`.`SCHEMATA`
+[2018-08-17 09:13:32]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'htg-dev')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'rap2_delos_app')]), OrderedDict([('databaseName', 'test')])]
+[2018-08-17 09:13:32]: 查询得到的库的个数: 6
+[2018-08-17 09:13:32]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'htg-dev', 'mysql', 'performance_schema', 'rap2_delos_app', 'test']
+[2018-08-17 09:13:32]: 总共元素个数为: 6
+[2018-08-17 09:13:32]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-08-17 09:13:37]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:13:37]: CloseUp self.intGetDatabaseResult: 1
+[2018-08-17 09:13:41]: press in 101-连接
+[2018-08-17 09:13:41]: 配置文件中读取到的配置有: {'port': '33066', 'path': 'D:\\Test\\export\\DBProduce', 'password': 'haotuoguan123456', 'name': 'test-180814-1', 'host': '172.16.0.9', 'type': 'md', 'user': 'haotuoguan'}
+[2018-08-17 09:13:42]: press in 205-断开连接
+[2018-08-17 09:13:42]: 断开前 self.intGetDatabaseResult: 1
+[2018-08-17 09:13:44]: press in 301-确定
+[2018-08-17 09:13:44]: 数据库连接已断开
+[2018-08-17 09:13:44]: searchValuesObj.connectionMysqlObjself: None
+[2018-08-17 09:13:44]: 断开后 self.intGetDatabaseResult: 0
+[2018-08-17 09:13:47]: press in 207-取消
+[2018-08-17 09:13:48]: <class 'wx._core.ComboBox'>
+[2018-08-17 09:13:48]: CloseUp self.intGetDatabaseResult: 0
+[2018-08-17 09:13:48]: 请先连接数据库
+[2018-08-17 09:13:49]: press in 301-确定
+[2018-08-17 09:13:54]: press in 5006-退出
+[2018-08-17 09:13:56]: press in 302-确定
+[2018-08-17 09:13:56]: booleanGetTailExit: True
+[2018-08-17 09:13:56]: threading event is set, 线程将退出
+[2018-08-17 09:13:56]: 程序退出
+[2018-08-17 11:01:33]: 日志文件: logs\2018-08-17.log
+[2018-08-17 11:01:35]: 检测到系统中已经安装wx模块
+[2018-08-17 11:01:35]: 检测到系统中已经安装pymysql模块
+[2018-08-17 11:01:35]: 执行环境完全, 将选择启动程序
+[2018-08-17 11:01:35]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-08-17 11:01:35]: 检测结果intIndex: 1
+[2018-08-17 11:01:35]: 配置文件已经存在(conf\dbp.conf)
+[2018-08-17 11:01:35]: 执行启动界面...
+[2018-08-17 11:01:35]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-08-17 11:01:35]: 子线程thread-log已启动
+[2018-08-17 11:01:36]: press in 101-连接
+[2018-08-17 11:01:37]: 配置文件中读取到的配置有: {'password': 'haotuoguan123456', 'port': '33066', 'name': 'test-180814-1', 'user': 'haotuoguan', 'path': 'D:\\Test\\export\\DBProduce', 'host': '172.16.0.9', 'type': 'md'}
+[2018-08-17 11:01:38]: press in 206-确定
+[2018-08-17 11:01:48]: 请重新检查数据库配置(可能配置出错或者网络出错)
+[2018-08-17 11:01:48]: 连接出错
+[2018-08-17 11:01:48]: 数据库连接失败
+[2018-08-17 11:02:10]: press in 301-确定
+[2018-08-17 11:02:28]: press in 205-测试连接
+[2018-08-17 11:02:29]: 断开前 self.intGetDatabaseResult: 0
+[2018-08-17 11:02:29]: 数据库已连接
+[2018-08-17 11:02:29]: 连接已断开
+[2018-08-17 11:02:30]: press in 301-确定
+[2018-08-17 11:02:30]: press in 206-确定
+[2018-08-17 11:02:30]: 数据库已连接
+[2018-08-17 11:02:30]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x0000028244E58B38>
+[2018-08-17 11:02:30]: 数据库连接成功
+[2018-08-17 11:02:30]: [MysqlConfigure]发生更改的配置项如下: 
+[2018-08-17 11:02:30]: host: 127.0.0.1
+[2018-08-17 11:02:30]: password: cg082702
+[2018-08-17 11:02:30]: port: 3306
+[2018-08-17 11:02:30]: user: root
+[2018-08-17 11:02:30]: 已经更新修改: [MysqlConfigure]配置块
+[2018-08-17 11:02:30]: 执行数据库查询语句:   SELECT      `SCHEMA_NAME` AS databaseName  FROM      `information_schema`.`SCHEMATA`
+[2018-08-17 11:02:30]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-08-17 11:02:30]: 查询得到的库的个数: 10
+[2018-08-17 11:02:31]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-08-17 11:02:31]: 总共元素个数为: 10
+[2018-08-17 11:02:31]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-08-17 11:02:35]: 下拉框选择: do_myself
+[2018-08-17 11:02:35]: 执行数据库查询语句:    SELECT       TABLE_NAME AS tableName   FROM       information_schema.`TABLES`   WHERE       TABLE_SCHEMA = 'do_myself'
+[2018-08-17 11:02:35]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-08-17 11:02:35]: 查询得到的表个数: 8
+[2018-08-17 11:02:35]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-08-17 11:02:35]: 总共元素个数为: 8
+[2018-08-17 11:02:35]: <class 'wx._core.ComboBox'>
+[2018-08-17 11:02:35]: CloseUp self.intGetDatabaseResult: 1
+[2018-08-17 11:02:38]: press in 5006-退出
+[2018-08-17 11:02:38]: press in 302-确定
+[2018-08-17 11:02:38]: booleanGetTailExit: True
+[2018-08-17 11:02:38]: threading event is set, 线程将退出
+[2018-08-17 11:02:39]: 数据库连接已关闭
+[2018-08-17 11:02:39]: 程序退出

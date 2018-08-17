@@ -8,12 +8,15 @@
 from producebin.utils.mysqlUtil import MySqlUtil
 from producebin.utils.fileUtil import FileUtil
 from producebin.dbpObject import DBPObject
+from sql.sqlSentence import SqlSentence
 
 class SearchValues(DBPObject):
 
     # 获取数据库信息
     # 其中有些方法返回OrderedDict类型数据, 这种类型数据的遍历获取数据的方式和dict一样
     # 不过就是这种OrderedDict类型数据是有序的
+
+    # 将获取sql语句的方式更改为从代码中读取--update time:2018-08-17
 
     connectionMysqlObj = None
 
@@ -27,29 +30,36 @@ class SearchValues(DBPObject):
         # 返回一个list类型数据, 元素为库名字, string类型
 
         listValue = []
-        strGetDatabaseSql = ''
 
         try:
-            strGetDatabaseSql = self.fileUtilObj.readFileContent('sql/getDatabaseName.sql')
+            # strGetDatabaseSql = self.fileUtilObj.readFileContent('sql/getDatabaseName.sql')
+            strGetDatabaseSql = SqlSentence().strDatabaseNameSql
 
-        except:
-            self.logUtilObj.writerLog('getDatabaseName()中拼接或者读取sql出错')
-        listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetDatabaseSql)
+            if strGetDatabaseSql == '':
+                self.logUtilObj.writerLog('读取出错, sql内容为空')
+                return None
 
-        if len(listDictResultObj) != 0:
-
-            # self.intGetDatabaseResult = 1
-
-            self.logUtilObj.writerLog('查询得到的库的个数: ' + str(len(listDictResultObj)))
-
-            for strContentItem in listDictResultObj:
-                for strKey, strValue in strContentItem.items():
-
-                    listValue.append(strValue)
+        except Exception as error:
+            self.logUtilObj.writerLog('getDatabaseName()中拼接或者读取sql出错' + str(error))
+            return None
 
         else:
-            self.logUtilObj.writerLog('getDatabaseName中传入的listDictResultObj长度为0或为空')
-        return listValue
+            listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetDatabaseSql)
+
+            if len(listDictResultObj) != 0:
+
+                # self.intGetDatabaseResult = 1
+
+                self.logUtilObj.writerLog('查询得到的库的个数: ' + str(len(listDictResultObj)))
+
+                for strContentItem in listDictResultObj:
+                    for strKey, strValue in strContentItem.items():
+
+                        listValue.append(strValue)
+
+            else:
+                self.logUtilObj.writerLog('getDatabaseName中传入的listDictResultObj长度为0或为空')
+            return listValue
 
 
     def getTotalTablesName(self, strDBName):
@@ -59,26 +69,35 @@ class SearchValues(DBPObject):
         # 返回一个lis类型数据, 元素为表名字, string类型
 
         listValue = []
-        strGetTableNameSql = ''
 
         try:
-            strGetTableNameSql = self.fileUtilObj.readFileContent('sql/getTotalTableName.sql') % ("'" + strDBName + "'")
-        except:
-            self.logUtilObj.writerLog('getTotalTablesName()中拼接或者读取sql出错')
-        listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableNameSql)
+            # strGetTableNameSql = self.fileUtilObj.readFileContent('sql/getTotalTableName.sql') % ("'" + strDBName + "'")
+            strGetTableNameSql = SqlSentence().strTotalTableName % ("'" + strDBName + "'")
 
-        if len(listDictResultObj) != 0:
+            if strGetTableNameSql == '':
+                self.logUtilObj.writerLog('读取出错, sql内容为空')
+                return None
 
-            self.logUtilObj.writerLog('查询得到的表个数: ' + str(len(listDictResultObj)))
-
-            for strContentItem in listDictResultObj:
-                for strKey, strValue in strContentItem.items():
-                    listValue.append(strValue)
+        except Exception as error:
+            self.logUtilObj.writerLog('getTotalTablesName()中拼接或者读取sql出错' + str(error))
+            return None
 
         else:
-            self.logUtilObj.writerLog('getTotalTablesName中传入的listDictResultObj长度为0或为空')
 
-        return listValue
+            listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableNameSql)
+
+            if len(listDictResultObj) != 0:
+
+                self.logUtilObj.writerLog('查询得到的表个数: ' + str(len(listDictResultObj)))
+
+                for strContentItem in listDictResultObj:
+                    for strKey, strValue in strContentItem.items():
+                        listValue.append(strValue)
+
+            else:
+                self.logUtilObj.writerLog('getTotalTablesName中传入的listDictResultObj长度为0或为空')
+
+            return listValue
 
 
     def getTotalTablesNameForExport(self, strDBName):
@@ -88,20 +107,27 @@ class SearchValues(DBPObject):
         # 返回一个list类型数据 其元素为OrderedDict类型
         # 为导出所需
 
-        strGetTotalTableNameSql = ''
-
         try:
-            strGetTotalTableNameSql = str(self.fileUtilObj.readFileContent('sql/getTotalTableName.sql')
-                                      % ("'" + strDBName + "'"))
-        except:
-            self.logUtilObj.writerLog('getTotalTableName()中拼接或者读取sql出错')
+            # strGetTotalTableNameSql = str(self.fileUtilObj.readFileContent('sql/getTotalTableName.sql')
+            #                           % ("'" + strDBName + "'"))
+            strGetTotalTableNameSql = SqlSentence().strTotalTableName % ("'" + strDBName + "'")
 
-        listOrderDictTotalTableName = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTotalTableNameSql)
+            if strGetTotalTableNameSql == '':
+                self.logUtilObj.writerLog('读取出错, sql内容为空')
+                return None
 
-        if len(listOrderDictTotalTableName) == 0:
-            self.logUtilObj.writerLog('查找所有表名: getTotalTableName()未查询到数据')
+        except Exception as error:
+            self.logUtilObj.writerLog('getTotalTableName()中拼接或者读取sql出错' + str(error))
+            return None
 
-        return listOrderDictTotalTableName
+        else:
+
+            listOrderDictTotalTableName = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTotalTableNameSql)
+
+            if len(listOrderDictTotalTableName) == 0:
+                self.logUtilObj.writerLog('查找所有表名: getTotalTableName()未查询到数据')
+
+            return listOrderDictTotalTableName
 
 
     def getSingleTableMsg(self, strDBName, strTableName):
@@ -114,14 +140,24 @@ class SearchValues(DBPObject):
         strGetTableMsgSql = ''
         try:
 
-            strGetTableMsgSql = self.fileUtilObj.readFileContent('sql/getTableMsgByTableName.sql') % (
-                ("'" + strDBName + "'"), ("'" + strTableName + "'"))
-        except:
-            self.logUtilObj.writerLog('getSingleTableMsg()中拼接或者读取sql出错')
+            # strGetTableMsgSql = self.fileUtilObj.readFileContent('sql/getTableMsgByTableName.sql') % (
+            #     ("'" + strDBName + "'"), ("'" + strTableName + "'"))
 
-        listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableMsgSql)
+            strGetTableMsgSql = SqlSentence().strTableMsgByTableName % (("'" + strDBName + "'"), ("'" + strTableName + "'"))
 
-        return listDictResultObj
+            if strGetTableMsgSql == '':
+                self.logUtilObj.writerLog('读取出错, sql内容为空')
+                return None
+
+        except Exception as error:
+            self.logUtilObj.writerLog('getSingleTableMsg()中拼接或者读取sql出错' + str(error))
+            return None
+
+        else:
+
+            listDictResultObj = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableMsgSql)
+
+            return listDictResultObj
 
 
 
@@ -135,14 +171,26 @@ class SearchValues(DBPObject):
         strGetTableChangeMsgSql = ''
 
         try:
-            strGetTableChangeMsgSql = str(self.fileUtilObj.readFileContent('sql/getTableDataChangeMsg.sql')
-                                % (("'" + strDBName + "'"), ("'" + strTableName + "'")))
-        except:
+            # strGetTableChangeMsgSql = str(self.fileUtilObj.readFileContent('sql/getTableDataChangeMsg.sql')
+            #                     % (("'" + strDBName + "'"), ("'" + strTableName + "'")))
+
+            strGetTableChangeMsgSql = SqlSentence().strTableDataChangeMsgSql % (("'" + strDBName +
+                                                                                 "'"), ("'" + strTableName + "'"))
+
+            if strGetTableChangeMsgSql == '':
+                self.logUtilObj.writerLog('读取出错, sql内容为空')
+                return None
+
+        except Exception as error:
             self.logUtilObj.writerLog('getTableDataChangeMsg()中拼接或者读取sql出错, strTableName = ' + strTableName)
+            self.logUtilObj.writerLog(str(error))
+            return None
 
-        listDictTableChangeMsg = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableChangeMsgSql)
+        else:
 
-        if len(listDictTableChangeMsg) == 0:
-            self.logUtilObj.writerLog('查询表更改信息getTableDataChangeMsg()未查询到数据')
+            listDictTableChangeMsg = MySqlUtil.doSearchSqlClass(self.connectionMysqlObj, strGetTableChangeMsgSql)
 
-        return listDictTableChangeMsg
+            if len(listDictTableChangeMsg) == 0:
+                self.logUtilObj.writerLog('查询表更改信息getTableDataChangeMsg()未查询到数据')
+
+            return listDictTableChangeMsg

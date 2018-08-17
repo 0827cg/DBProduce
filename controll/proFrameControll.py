@@ -104,23 +104,34 @@ class ProFrameControll(DBPObject):
 
         # 下拉选择框点击下拉后的响应事件处理
 
-        intIndex = 0
+        # global intIndex
 
         comboboxObj = eventObj.GetEventObject()
         self.logUtilObj.writerLog(str(type(comboboxObj)))
+
+        self.logUtilObj.writerLog('CloseUp self.intGetDatabaseResult: ' + str(self.intGetDatabaseResult))
 
         if self.searchValuesObj.connectionMysqlObj is not None:
 
             if self.intGetDatabaseResult != 1:
                 intIndex = -1
+            else:
+                intIndex = 1
 
         else:
-            intIndex = -1
+            intIndex = -2
 
         if intIndex == -1:
 
+            self.logUtilObj.writerLog('下拉框赋值失败')
+            DialogSelf(self.parentObj, 'error', '查找库失败, 请重试').showMessageUI()
+
+        elif intIndex == -2:
+
             self.logUtilObj.writerLog('请先连接数据库')
             DialogSelf(self.parentObj, 'warning', '请先连接数据库').showMessageUI()
+        else:
+            pass
 
 
     def chooseRadioButton(self, eventObj):
@@ -154,7 +165,12 @@ class ProFrameControll(DBPObject):
             # print('已经连接数据库')
 
             if self.intGetDatabaseResult != 1:
-                self.setChoiceForComboBox(self.searchValuesObj.getDatabaseName())
+                listValue = self.searchValuesObj.getDatabaseName()
+
+                if listValue is not None:
+                    self.setChoiceForComboBox(listValue)
+                else:
+                    self.logUtilObj.writerLog('未查找到库的数据')
         else:
             pass
             # print('未连接数据库')
@@ -222,6 +238,9 @@ class ProFrameControll(DBPObject):
             self.logUtilObj.writerLog('总共元素个数为: ' + str(len(arrItems)))
         else:
             self.logUtilObj.writerLog('arrItems长度为0或值为空, 不进行设置')
+
+
+        self.logUtilObj.writerLog('setChoiceForComboBox self.intGetDatabaseResult: ' + str(self.intGetDatabaseResult))
 
 
     def setContentForCheckListBox(self, arrItems):

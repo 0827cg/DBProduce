@@ -39,11 +39,12 @@ class ConnectDialogControll(DBPObject):
         strPressContent = buttonObj.GetLabel()
         self.logUtilObj.writerLog('press in ' + str(intId) + '-' + strPressContent)
         if intId == 205:
-
+            self.logUtilObj.writerLog('断开前 self.intGetDatabaseResult: ' + str(self.parentObj.proFrameControllObj.intGetDatabaseResult))
             intCheck = self.checkWhetherNull(self.getContentFromWidgets())
             if intCheck == -1:
                 self.logUtilObj.writerLog('请将数据库信息配置完全')
                 DialogSelf(self.parentObj, 'warning', '请将数据库信息配置完全').showMessageUI()
+
             else:
 
                 if '断开' in strPressContent:
@@ -51,6 +52,7 @@ class ConnectDialogControll(DBPObject):
                     if self.searchValuesObj.connectionMysqlObj is not None:
                         self.searchValuesObj.connectionMysqlObj.close()
                         self.searchValuesObj.connectionMysqlObj = None
+                        self.parentObj.proFrameControllObj.intGetDatabaseResult = 0
                         DialogSelf(self.parentObj, 'ok', '数据库连接已断开').showMessageUI()
                         self.logUtilObj.writerLog('数据库连接已断开')
 
@@ -58,6 +60,8 @@ class ConnectDialogControll(DBPObject):
                         self.windowsObj.buttonConformObj.Enable()
 
                         self.logUtilObj.writerLog('searchValuesObj.connectionMysqlObjself: ' + str(self.searchValuesObj.connectionMysqlObj))
+                        self.logUtilObj.writerLog('断开后 self.intGetDatabaseResult: ' + str(
+                            self.parentObj.proFrameControllObj.intGetDatabaseResult))
 
                 else:
                     intResult = self.getConnectionForTest()

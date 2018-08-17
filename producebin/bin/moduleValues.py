@@ -32,10 +32,23 @@ class ModuleValues(DBPObject):
             exportMDObj.writerTitle(strTableName)
 
             listDictTableChangeMsg = self.valuesObj.getSingleTableChangeMsg(strDBName, strTableName)
-            exportMDObj.writerTable(listDictTableChangeMsg)
 
-            listDictResultObj = self.valuesObj.getSingleTableMsg(strDBName, strTableName)
-            exportMDObj.writerTable(listDictResultObj)
+            if listDictTableChangeMsg is not None:
+
+                exportMDObj.writerTable(listDictTableChangeMsg)
+
+                listDictResultObj = self.valuesObj.getSingleTableMsg(strDBName, strTableName)
+
+                if listDictResultObj is not None:
+
+                    exportMDObj.writerTable(listDictResultObj)
+                else:
+                    self.logUtilObj.writerLog('未获取到表' + strTableName + '的信息')
+                    return -1
+
+            else:
+                self.logUtilObj.writerLog('未获取到表' + strTableName + '的历史更改信息')
+                return -1
 
         except Exception as error:
             intResult = -1
@@ -63,15 +76,24 @@ class ModuleValues(DBPObject):
                 exportMDObj.writerTitle(strTableName)
 
                 listDictTableChangeMsg = self.valuesObj.getSingleTableChangeMsg(strDBName, strTableName)
-                exportMDObj.writerTable(listDictTableChangeMsg)
 
-                listDictResultObj = self.valuesObj.getSingleTableMsg(strDBName, strTableName)
-                intIndex = exportMDObj.writerTable(listDictResultObj)
+                if listDictTableChangeMsg is not None:
+                    exportMDObj.writerTable(listDictTableChangeMsg)
 
-                if intIndex == -1:
-                    self.logUtilObj.writerLog(strDBName + '.' + strTableName + ' 导出出错')
+                    listDictResultObj = self.valuesObj.getSingleTableMsg(strDBName, strTableName)
+
+                    if listDictResultObj is not None:
+
+                        intIndex = exportMDObj.writerTable(listDictResultObj)
+
+                        if intIndex == -1:
+                            self.logUtilObj.writerLog(strDBName + '.' + strTableName + ' 导出出错')
+                        else:
+                            self.logUtilObj.writerLog(strDBName + '.' + strTableName + ' 导出成功')
+                    else:
+                        self.logUtilObj.writerLog('未获取到表' + strTableName + '信息')
                 else:
-                    self.logUtilObj.writerLog(strDBName + '.' + strTableName + ' 导出成功')
+                    self.logUtilObj.writerLog('未获取到表' + strTableName + '的历史更改信息')
 
 
             except Exception as error:

@@ -16,17 +16,22 @@ class FileUtil(DBPObject):
 
         # 读取普通文件内容并返回
         # 每次只读取1000字节
+        # strInputFileName: 需要读取的文件存放路径
 
         strFileContent = ''
 
-        with open(strInputFileName, 'r', encoding='utf-8') as fileObj:
+        if os.path.exists(strInputFileName):
 
-            while fileObj.readable():
-                strFileContentItem = fileObj.read(1000)
-                if (strFileContentItem != ''):
-                    strFileContent += strFileContentItem
-                else:
-                    break
+            with open(strInputFileName, 'r', encoding='utf-8') as fileObj:
+
+                while fileObj.readable():
+                    strFileContentItem = fileObj.read(1000)
+                    if (strFileContentItem != ''):
+                        strFileContent += strFileContentItem
+                    else:
+                        break
+        else:
+            self.logUtilObj.writerLog(strInputFileName + '文件不存在')
 
         return strFileContent
 
@@ -35,17 +40,23 @@ class FileUtil(DBPObject):
 
         # 读取普通文件内容并返回
         # 一行一行读取
+        # strInputFileName: 需要读取的文件存放路径
 
         strFileContent = ''
 
-        with open(strInputFileName, 'r', encoding='utf-8') as fileObj:
+        if os.path.exists(strInputFileName):
 
-            while fileObj.readable():
-                strFileContentItem = fileObj.readline()
-                if (strFileContentItem != ''):
-                    strFileContent += strFileContentItem
-                else:
-                    break
+            with open(strInputFileName, 'r', encoding='utf-8') as fileObj:
+
+                while fileObj.readable():
+                    strFileContentItem = fileObj.readline()
+                    if (strFileContentItem != ''):
+                        strFileContent += strFileContentItem
+                    else:
+                        break
+
+        else:
+            self.logUtilObj.writerLog(strInputFileName + '文件不存在')
 
         return strFileContent
 
