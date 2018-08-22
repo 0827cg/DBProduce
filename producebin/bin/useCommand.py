@@ -26,38 +26,38 @@ class UseCommand(DBPObject):
 
         self.logUtilObj.writerLog("请输入数据库信息('q to exit')")
 
-        dictMysqlMsg['host'] = self.inputSelf("数据库地址(host address): ")
-        dictMysqlMsg['port'] = int(self.inputSelf("端口号(port): "))
-        dictMysqlMsg['user'] = self.inputSelf("用户名(user name): ")
-        dictMysqlMsg['password'] = self.inputSelf("密码(password): ")
+        dictMysqlMsg['host'] = self.__inputSelf("数据库地址(host address): ")
+        dictMysqlMsg['port'] = int(self.__inputSelf("端口号(port): "))
+        dictMysqlMsg['user'] = self.__inputSelf("用户名(user name): ")
+        dictMysqlMsg['password'] = self.__inputSelf("密码(password): ")
 
         self.logUtilObj.writerLog('准备连接数据库...')
-        self.searchValuesObj.connectionMysqlObj = self.getConnectionMysql(dictMysqlMsg)
+        self.searchValuesObj.connectionMysqlObj = self.__getConnectionMysql(dictMysqlMsg)
 
         if self.searchValuesObj.connectionMysqlObj is not None:
 
             listDBName = self.searchValuesObj.getDatabaseName()
 
             self.logUtilObj.writerLog('查找到的库如下, 请输入序号选择')
-            self.showListAndIndex(listDBName)
-            intChooseDBName = int(self.inputSelf('选择要查找的库(database): '))
+            self.__showListAndIndex(listDBName)
+            intChooseDBName = int(self.__inputSelf('选择要查找的库(database): '))
             self.strDBName = listDBName[intChooseDBName - 1]
             self.logUtilObj.writerLog('选择的数据库为: ' + self.strDBName)
 
 
-            # self.dictMysqlMsg['database'] = self.inputSelf("输入查找的库名(database): ")
-            strSavePath = self.inputSelf("保存的路径(save path): ")
-            strOutFileName = self.inputSelf("保存的文件名(output file name): ")
-            intOutFileType = int(self.inputSelf("保存的文件类型(output file type):\n  1. markdown\t 2. text"))
+            # self.dictMysqlMsg['database'] = self.__inputSelf("输入查找的库名(database): ")
+            strSavePath = self.__inputSelf("保存的路径(save path): ")
+            strOutFileName = self.__inputSelf("保存的文件名(output file name): ")
+            intOutFileType = int(self.__inputSelf("保存的文件类型(output file type):\n  1. markdown\t 2. text"))
 
-            self.generatorValue(strSavePath, strOutFileName, intOutFileType)
+            self.__generatorValue(strSavePath, strOutFileName, intOutFileType)
         else:
             self.logUtilObj.writerLog('数据库连接出错, 程序退出')
             sys.exit(0)
 
 
 
-    def inputSelf(self, strHint):
+    def __inputSelf(self, strHint):
 
         # 用来接收用户的输入
 
@@ -72,7 +72,7 @@ class UseCommand(DBPObject):
         return strInput
 
 
-    def getConnectionMysql(self, dictMysqlMsg):
+    def __getConnectionMysql(self, dictMysqlMsg):
 
         # 连接数据库
 
@@ -85,7 +85,7 @@ class UseCommand(DBPObject):
         return connectionObj
 
 
-    def showListAndIndex(self, listMsg):
+    def __showListAndIndex(self, listMsg):
 
         # 显示数据让选择
 
@@ -97,7 +97,7 @@ class UseCommand(DBPObject):
         self.logUtilObj.writerLog(strContent)
 
 
-    def generatorValue(self, strSavePath, strOutFileName, intOutFileType):
+    def __generatorValue(self, strSavePath, strOutFileName, intOutFileType):
 
         # 导出
 

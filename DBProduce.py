@@ -9,9 +9,7 @@ from producebin.operateCheck import OperateCheck
 
 def main():
 
-    intResult = OperateCheck().checkModuleExists()
-
-    if intResult != 1:
+    if OperateCheck().checkModuleExists() != 1:
         sys.exit(0)
     else:
         OperateBin()
