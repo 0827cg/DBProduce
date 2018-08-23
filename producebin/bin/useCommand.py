@@ -44,8 +44,6 @@ class UseCommand(DBPObject):
             self.strDBName = listDBName[intChooseDBName - 1]
             self.logUtilObj.writerLog('选择的数据库为: ' + self.strDBName)
 
-
-            # self.dictMysqlMsg['database'] = self.__inputSelf("输入查找的库名(database): ")
             strSavePath = self.__inputSelf("保存的路径(save path): ")
             strOutFileName = self.__inputSelf("保存的文件名(output file name): ")
             intOutFileType = int(self.__inputSelf("保存的文件类型(output file type):\n  1. markdown\t 2. text"))
