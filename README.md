@@ -17,6 +17,22 @@
 
 当然我也打包了[exe下载][0]
 
+### 描述
+
+目前仅支持导出`markdown`格式文档, 后续可以支持多种文档, 先已经提供导出的模块类型引入选择, 如需要新增模块类, 其该类中需要包含
+一个静态方法, 方法名为`showFileType`, 方法内容就是返回导出类型的名字,如定义一个导出`markdown`格式的类
+```
+class XXX(DBProduce):
+
+    ...
+    @staticmethod
+    def showFileType():
+
+        return 'md'
+```
+
+之后需要在`producebin/module/__init__.py`中进行引入
+
 > author: cg错过
 
 > create Time: 2018-06-08
