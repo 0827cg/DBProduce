@@ -1891,3 +1891,68 @@ from .exportMD import ExportMD
 [2018-09-18 17:44:47]: ThreadLog event is set, 子线程退出
 [2018-09-18 17:44:47]: 数据库连接已关闭
 [2018-09-18 17:44:47]: 程序退出
+[2018-09-18 17:55:59]: 日志文件: logs\2018-09-18.log
+[2018-09-18 17:55:59]: 检测到系统中已经安装wx模块
+[2018-09-18 17:56:00]: 检测到系统中已经安装pymysql模块
+[2018-09-18 17:56:00]: 执行环境完全, 将选择启动程序
+[2018-09-18 17:56:00]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-09-18 17:56:00]: 检测结果intIndex: 1
+[2018-09-18 17:56:00]: 配置文件已经存在(conf\dbp.conf)
+[2018-09-18 17:56:00]: 执行启动界面...
+[2018-09-18 17:56:01]: 检测到可导出类型: ['md']
+[2018-09-18 17:56:01]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-09-18 17:56:01]: 子线程thread-log已启动
+[2018-09-18 17:56:03]: press in 101-连接
+[2018-09-18 17:56:03]: 配置文件中读取到的配置有: {'type': 'md', 'user': 'root', 'host': '127.0.0.1', 'name': 'test-180814-1', 'port': '3306', 'path': 'D:\\Test\\export\\DBProduce', 'password': 'cg082702'}
+[2018-09-18 17:56:05]: press in 206-确定
+[2018-09-18 17:56:05]: 数据库已连接
+[2018-09-18 17:56:05]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x000002B067C84780>
+[2018-09-18 17:56:05]: 数据库连接成功
+[2018-09-18 17:56:05]: 执行数据库查询语句:   SELECT      `SCHEMA_NAME` AS databaseName  FROM      `information_schema`.`SCHEMATA`
+[2018-09-18 17:56:05]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'htg-new')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-09-18 17:56:06]: 查询得到的库的个数: 11
+[2018-09-18 17:56:06]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'htg-new', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-09-18 17:56:06]: 总共元素个数为: 11
+[2018-09-18 17:56:06]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-09-18 17:56:15]: press in 5006-退出
+[2018-09-18 17:56:16]: press in 302-确定
+[2018-09-18 17:56:16]: booleanGetTailExit: True
+[2018-09-18 17:56:16]: ThreadLog event is set, 子线程退出
+[2018-09-18 17:56:16]: 数据库连接已关闭
+[2018-09-18 17:56:16]: 程序退出
+[2018-09-18 17:57:28]: 日志文件: logs\2018-09-18.log
+[2018-09-18 17:57:28]: 检测到系统中已经安装wx模块
+[2018-09-18 17:57:28]: 检测到系统中已经安装pymysql模块
+[2018-09-18 17:57:28]: 执行环境完全, 将选择启动程序
+[2018-09-18 17:57:28]: 检测到为windows系统(Windows-10-10.0.17134-SP0)
+[2018-09-18 17:57:28]: 检测结果intIndex: 1
+[2018-09-18 17:57:28]: 配置文件已经存在(conf\dbp.conf)
+[2018-09-18 17:57:28]: 执行启动界面...
+[2018-09-18 17:57:28]: 检测到可导出类型: ['md']
+[2018-09-18 17:57:29]: 将启动子线程thread-log(读取渲染日志内容)
+[2018-09-18 17:57:29]: 子线程thread-log已启动
+[2018-09-18 17:57:30]: press in 101-连接
+[2018-09-18 17:57:30]: 配置文件中读取到的配置有: {'host': '127.0.0.1', 'type': 'md', 'password': 'cg082702', 'path': 'D:\\Test\\export\\DBProduce', 'port': '3306', 'name': 'test-180814-1', 'user': 'root'}
+[2018-09-18 17:57:32]: press in 206-确定
+[2018-09-18 17:57:32]: 数据库已连接
+[2018-09-18 17:57:32]: searchValuesObj.connectionMysqlObj: <pymysql.connections.Connection object at 0x0000015B32985780>
+[2018-09-18 17:57:32]: 数据库连接成功
+[2018-09-18 17:57:32]: 执行数据库查询语句:   SELECT      `SCHEMA_NAME` AS databaseName  FROM      `information_schema`.`SCHEMATA`
+[2018-09-18 17:57:32]: 查到的数据: [OrderedDict([('databaseName', 'information_schema')]), OrderedDict([('databaseName', 'blog')]), OrderedDict([('databaseName', 'do_myself')]), OrderedDict([('databaseName', 'htg-dev-local')]), OrderedDict([('databaseName', 'htg-for-test')]), OrderedDict([('databaseName', 'htg-new')]), OrderedDict([('databaseName', 'mysql')]), OrderedDict([('databaseName', 'performance_schema')]), OrderedDict([('databaseName', 'sakila')]), OrderedDict([('databaseName', 'sys')]), OrderedDict([('databaseName', 'world')])]
+[2018-09-18 17:57:32]: 查询得到的库的个数: 11
+[2018-09-18 17:57:32]: 已为主面板中的下拉框设置内容项, arrItems: ['information_schema', 'blog', 'do_myself', 'htg-dev-local', 'htg-for-test', 'htg-new', 'mysql', 'performance_schema', 'sakila', 'sys', 'world']
+[2018-09-18 17:57:33]: 总共元素个数为: 11
+[2018-09-18 17:57:33]: setChoiceForComboBox self.intGetDatabaseResult: 1
+[2018-09-18 17:57:36]: 下拉框选择: do_myself
+[2018-09-18 17:57:36]: 执行数据库查询语句:    SELECT       TABLE_NAME AS tableName   FROM       information_schema.`TABLES`   WHERE       TABLE_SCHEMA = 'do_myself'
+[2018-09-18 17:57:36]: 查到的数据: [OrderedDict([('tableName', 'htg_activity')]), OrderedDict([('tableName', 'htg_activity_enroll_copy1')]), OrderedDict([('tableName', 'htg_daily_service_base')]), OrderedDict([('tableName', 'htg_face')]), OrderedDict([('tableName', 'htg_face_log')]), OrderedDict([('tableName', 'htg_holiday_date')]), OrderedDict([('tableName', 'htg_shop')]), OrderedDict([('tableName', 'oss_base_area')])]
+[2018-09-18 17:57:36]: 查询得到的表个数: 8
+[2018-09-18 17:57:36]: 已为主面板中的复选列表框设置内容项, arrItems: ['htg_activity', 'htg_activity_enroll_copy1', 'htg_daily_service_base', 'htg_face', 'htg_face_log', 'htg_holiday_date', 'htg_shop', 'oss_base_area']
+[2018-09-18 17:57:36]: 总共元素个数为: 8
+[2018-09-18 17:57:36]: CloseUp self.intGetDatabaseResult: 1
+[2018-09-18 17:57:40]: press in 5006-退出
+[2018-09-18 17:57:41]: press in 302-确定
+[2018-09-18 17:57:41]: booleanGetTailExit: True
+[2018-09-18 17:57:42]: ThreadLog event is set, 子线程退出
+[2018-09-18 17:57:42]: 数据库连接已关闭
+[2018-09-18 17:57:42]: 程序退出

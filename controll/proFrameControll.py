@@ -122,8 +122,8 @@ class ProFrameControll(DBPObject):
 
         # global intIndex
 
-        comboboxObj = eventObj.GetEventObject()
-        self.logUtilObj.writerLog(str(type(comboboxObj)))
+        # comboboxObj = eventObj.GetEventObject()
+        # self.logUtilObj.writerLog(str(type(comboboxObj)))
 
         self.logUtilObj.writerLog('CloseUp self.intGetDatabaseResult: ' + str(self.intGetDatabaseResult))
 
