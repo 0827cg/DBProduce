@@ -16,6 +16,7 @@ class DBFrame(wx.Frame, DBPObject):
 
     strTotalContent = ''
     listThread = []
+    # listFileType = []
     # intCursor = 0
 
     def __init__(self, parentObj, strTitle, intWidth, intHeight):
@@ -24,11 +25,15 @@ class DBFrame(wx.Frame, DBPObject):
 
         self.proFrameControllObj = ProFrameControll(self)
 
+        self.listFileType = self.proFrameControllObj.getFileTypeToExport()
+
         self.SetWindowStyle(style=(wx.SIMPLE_BORDER | wx.CAPTION | wx.MINIMIZE_BOX | wx.CLOSE_BOX ))
         # self.SetWindowStyle(style=(wx.MINIMIZE_BOX | wx.RESIZE_BORDER
         #                            | wx.SYSTEM_MENU | wx.CAPTION | wx.CLOSE_BOX | wx.SIMPLE_BORDER))
         self.SetSize(intWidth, intHeight)
         self.Center()
+
+
 
         self.__initUI()
 
@@ -128,7 +133,7 @@ class DBFrame(wx.Frame, DBPObject):
         # self.SetIcon(iconObj)
 
         # 采用此方式设置, 这样打包不受影响
-        self.setFrameIcon('DBProduce_frame.ico')
+        self.__setFrameIcon('DBProduce_frame.ico')
 
         self.Bind(wx.EVT_MENU, self.proFrameControllObj.chooseMenuRun)
         self.Bind(wx.EVT_RADIOBUTTON, self.proFrameControllObj.chooseRadioButton)
@@ -139,7 +144,7 @@ class DBFrame(wx.Frame, DBPObject):
         self.Bind(wx.EVT_SET_CURSOR, self.proFrameControllObj.frameFocus)
 
 
-    def setFrameIcon(self, strIconName):
+    def __setFrameIcon(self, strIconName):
 
         # 设置图标
         # 这里的图标是从代码文件中读取而来

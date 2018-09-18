@@ -13,11 +13,13 @@ from win.setDialog import SetDialog
 from producebin.dbpObject import DBPObject
 from win.dialogSelf import DialogSelf
 from producebin.utils.fileUtil import FileUtil
-from producebin.utils.threadWork import ThreadWork
+from producebin.utils.threadWork import ThreadLog
+from producebin.utils.threadWork import ThreadExport
 from producebin.utils.configMsg import ConfigMsg
 from producebin.bin.values import SearchValues
 from producebin.bin.moduleValues import ModuleValues
 from producebin.module.exportMD import ExportMD
+from producebin.utils.exportType import ExportType
 
 class ProFrameControll(DBPObject):
 
@@ -32,6 +34,7 @@ class ProFrameControll(DBPObject):
         self.fileUtilObj = FileUtil()
         self.configMsgObj = ConfigMsg()
         self.searchValuesObj = SearchValues()
+        # self.getFileTypeToExport()
 
     def chooseMenuRun(self, eventObj):
 
@@ -73,7 +76,19 @@ class ProFrameControll(DBPObject):
         self.logUtilObj.writerLog('press in ' + str(intId) + '-' + strPressContent)
 
         if intId == 107:
-            self.exportMsg()
+
+            dictCheckRes = self.exportCheck()
+            self.logUtilObj.writerLog('检测结果: ' + str(dictCheckRes))
+
+            if 'warning' not in dictCheckRes:
+
+                self.logUtilObj.writerLog('将启动ThreadExport线程...')
+                threadExportObj = ThreadExport(self.exportMsg, dictCheckRes)
+                threadExportObj.start()
+
+
+
+            # self.exportMsg()
 
             # 启动线程, 目的为循环读取文件内容并显示在面板
             # 现已废弃--time: 2018-08-02 16:18
@@ -97,6 +112,7 @@ class ProFrameControll(DBPObject):
         self.strComboBoxChoice = strComBoBoxChoice
 
         self.logUtilObj.writerLog('下拉框选择: ' + strComBoBoxChoice)
+        self.parentObj.radioButtonNoObj.SetValue(True)
         self.setContentForCheckListBox(self.searchValuesObj.getTotalTablesName(strComBoBoxChoice))
 
 
@@ -255,10 +271,14 @@ class ProFrameControll(DBPObject):
         else:
             self.logUtilObj.writerLog('arrItems长度为0或值为空, 不进行设置')
 
-    def exportMsg(self):
+    def exportCheck(self):
 
-        # 导出
-        # 这里先读取配置信息, 再获取选中的导出项, 之后导出
+        # 导出前的检测
+        # 即点击导出按钮进行检测是否连接选择数据库或者选择导出表, 返回一个dict类型数据
+        # 如果检测不完全则dict类型中将包含名为warning的key, 否则则无
+
+        dictCheckRes = {}
+        listTypeName = ['md', 'html', 'text', 'word']
 
         intCheckRes = self.configureUtilObj.checkConfigHasExist(self.configParserObj,
                                                                 self.configMsgObj.strExportSessionName,
@@ -270,14 +290,16 @@ class ProFrameControll(DBPObject):
             if self.searchValuesObj.connectionMysqlObj is not None:
 
                 if self.strComboBoxChoice is '':
-                    self.logUtilObj.writerLog('未选中具体数据库')
+                    self.logUtilObj.writerLog('检测到未选中具体数据库')
                     DialogSelf(self.parentObj, 'warning', '请先选择数据库').showMessageUI()
+                    dictCheckRes['warning'] = -1
                 else:
                     tupleCheckedStr = self.parentObj.checkListBoxObj.GetCheckedStrings()
 
                     if len(tupleCheckedStr) == 0:
-                        self.logUtilObj.writerLog('未选中需要执行导出的表')
+                        self.logUtilObj.writerLog('检测到未选中需要执行导出的表')
                         DialogSelf(self.parentObj, 'warning', '请先选择表').showMessageUI()
+                        dictCheckRes['warning'] = -1
                     else:
 
                         if self.configMsgObj.strFileTypeKey in dictConfig:
@@ -286,21 +308,59 @@ class ProFrameControll(DBPObject):
                             strFileName = dictConfig[self.configMsgObj.strFileNameKey]
                             strFileType = dictConfig[self.configMsgObj.strFileTypeKey]
 
-                            if operator.eq(strFileType, 'md'):
 
-                                exportMDObj = ExportMD(strFileDir, strFileName)
-                                ModuleValues(self.searchValuesObj).mdGenerateTuple(exportMDObj,
-                                                                                   self.strComboBoxChoice, tupleCheckedStr)
+                            if strFileType in listTypeName:
+
+                                dictCheckRes['fileMsg'] = dictConfig
+                                dictCheckRes['tupleCheckList'] = tupleCheckedStr
+
                             else:
+
                                 self.logUtilObj.writerLog('暂时不支持导出该类型')
+                                dictCheckRes['warning'] = 0
                         else:
-                            self.logUtilObj.writerLog('读取配置文件数据不全, 读取出错')
+
+                            dictCheckRes['warning'] = -1
+                            self.logUtilObj.writerLog('检测到配置文件数据不全, 读取出错')
             else:
-                self.logUtilObj.writerLog('未连接数据库')
+
+                dictCheckRes['warning'] = -2
+                self.logUtilObj.writerLog('检测到未连接数据库')
                 DialogSelf(self.parentObj, 'warning', '请先连接数据库').showMessageUI()
 
         else:
-            self.logUtilObj.writerLog('配置文件中配置参数不全')
+
+            dictCheckRes['warning'] = -1
+            self.logUtilObj.writerLog('检测到配置文件中配置参数不全')
+
+        return dictCheckRes
+
+
+    def exportMsg(self, dictCheckRes):
+
+        # dictCheckRes: 检测结果, dict类型
+        # key: fileMsg, 其元素为dict,该dict的内容即配置文件中导出配置的key和value
+        # key: tupleCheckList , 为多选框中已经选择的元素, 为tuple元组类型
+
+        # exportCheck方法已经进行判断
+
+        dictConfig = dictCheckRes['fileMsg']
+        tupleCheckedStr = dictCheckRes['tupleCheckList']
+
+        strFileDir = dictConfig[self.configMsgObj.strFilePathKey]
+        strFileName = dictConfig[self.configMsgObj.strFileNameKey]
+        strFileType = dictConfig[self.configMsgObj.strFileTypeKey]
+
+
+        if operator.eq(strFileType, 'md'):
+            exportMDObj = ExportMD(strFileDir, strFileName)
+            intResult = ModuleValues(self.searchValuesObj).mdGenerateTuple(exportMDObj, self.strComboBoxChoice, tupleCheckedStr)
+
+            # if intResult == 1:
+            #     DialogSelf(self.parentObj, 'info', '导出成功').showMessageUI()
+            # else:
+            #     DialogSelf(self.parentObj, 'error', '导出出错').showMessageUI()
+            # self.logUtilObj.writerLog('intResult: ' + str(intResult))
 
 
     def selectAll(self, booleanChoice):
@@ -325,7 +385,7 @@ class ProFrameControll(DBPObject):
 
         self.logUtilObj.writerLog('将启动子线程thread-log(读取渲染日志内容)')
 
-        threadSetLog = ThreadWork(self.parentObj)
+        threadSetLog = ThreadLog(self.parentObj)
         self.parentObj.listThread.append(threadSetLog)
         threadSetLog.start()
         self.logUtilObj.writerLog('子线程thread-log已启动')
@@ -341,6 +401,18 @@ class ProFrameControll(DBPObject):
     def getSearchValues(self):
 
         return self.searchValuesObj
+
+
+    def getFileTypeToExport(self):
+
+        # 获取可供选择的导出类型
+
+        listFileType = ExportType().getTypeMsg()
+        self.logUtilObj.writerLog('检测到可导出类型: ' + str(listFileType))
+
+        return listFileType
+
+
 
 
 

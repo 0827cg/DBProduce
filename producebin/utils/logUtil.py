@@ -28,10 +28,11 @@ class LogUtil:
 
     def writerLog(self, strContent, whetherAdd=True):
 
-        #写入文件
+        # 写入文件
+        # strContent: 需要写入的内容, 为字符串内容.这里未做类型判断,只为敦促自己使用时需要多考虑类型s
         # whetherAdd: 是否换行,默认换行
 
-        if(whetherAdd & True):
+        if whetherAdd & True:
             with open(self.strLogFileName, 'a', encoding='utf-8') as fileObj:
                 fileObj.write(self.getDateTimeForLog() + strContent + '\n')
         else:
@@ -74,7 +75,7 @@ class LogUtil:
 
     def checkAndCreateDir(self, strDirName):
 
-        if(not (os.path.exists(strDirName))):
+        if not (os.path.exists(strDirName)):
             os.makedirs(strDirName)
             self.writerLog(strDirName + "文件夹不存在,已自动创建")
             self.writerLog("=================")

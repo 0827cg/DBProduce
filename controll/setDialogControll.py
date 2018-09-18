@@ -143,6 +143,6 @@ class SetDialogControll(DBPObject):
 
         # 为下拉框设置可选的内容项
 
-        listTypeName = ['md', 'html', 'text', 'word']
+        listTypeName = self.parentObj.listFileType
         self.windowsObj.comboBoxTypeObj.SetItems(listTypeName)
 

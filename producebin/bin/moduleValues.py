@@ -101,13 +101,19 @@ class ModuleValues(DBPObject):
                 self.logUtilObj.writerLog(str(error))
                 intIndex = -1
         if intIndex != 1:
-            self.logUtilObj.writerLog('*****导出出错*****')
+            self.logUtilObj.writerLog('=====导出出错=====')
             self.logUtilObj.writerLog('详情请看日志: ' + self.logUtilObj.strLogFileName)
+            intResult = -1
+
         else:
-            self.logUtilObj.writerLog('*****导出完成*****')
+            self.logUtilObj.writerLog('=====导出完成=====')
             self.logUtilObj.writerLog('导出文件路径: ' + exportMDObj.strFileName)
+            intResult = 1
 
         self.logUtilObj.writerLog("导出耗时: " + str(round((time.time() - intIndexTime), 4)) + "s")
-        return 1
+        self.logUtilObj.writerLog("==================")
+
+        return intResult
+
 
 

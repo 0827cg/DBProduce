@@ -22,8 +22,8 @@ class OperateCheck(DBPObject):
 
         # 检测模块是否存在
 
-        checkEnvObj = CheckEnv()
-        intResult = checkEnvObj.checkEnv(self.arrModuleName)
+        # checkEnvObj = CheckEnv()
+        intResult = CheckEnv().checkEnv(self.arrModuleName)
 
         if intResult != 1:
             self.logUtilObj.writerLog('执行环境不足, 程序退出')

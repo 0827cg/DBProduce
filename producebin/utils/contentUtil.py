@@ -29,15 +29,9 @@ class ContentUtil:
                     if self.booleanGetTailExit:
                         break
 
-                    # currentPos = fileObj.seek(0, os.SEEK_END)
-                    # print(pos)
-                    #
-                    # if currentPos > pos:
-                    #     pos = fileObj.seek(0, os.SEEK_END)
-                    #     continue
-
                     strLineContent = fileObj.readline()
                     if not strLineContent:
+                        fileObj.seek(fileObj.tell())
                         continue
                     else:
                         yield strLineContent.decode('utf-8').strip('\n')

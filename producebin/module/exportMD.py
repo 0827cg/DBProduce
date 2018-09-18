@@ -158,7 +158,12 @@ class ExportMD(DBPObject):
 
     def showHint(self):
 
-        self.logUtilObj.writerLog('*****导出markdown****')
+        self.logUtilObj.writerLog('=====导出markdown=====')
+
+    @staticmethod
+    def showFileType():
+
+        return 'md'
 
 
 

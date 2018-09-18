@@ -15,6 +15,8 @@ class DBPObject(object):
     strConfigDirPath = 'conf' + os.sep
     strConfigFileName = 'dbp.conf'
 
+    strModuleFilePath = 'producebin' + os.sep + 'module'
+
 
     logUtilObj = LogUtil(_strLogDirPath)
     contentUtilObj = ContentUtil(logUtilObj.strLogFileName)
