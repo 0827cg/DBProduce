@@ -121,7 +121,7 @@ class DBFrame(wx.Frame, DBPObject):
         # panelTail = wx.Panel(panelMasterObj)
         panelTail = wx.Panel(panelMasterObj, size=(320, 19))
         panelTail.SetBackgroundColour('#efefef')
-        staticTextHintObj = wx.StaticText(panelTail, label='v1.0.0', size=(45, 15), pos=(260, 2))
+        staticTextHintObj = wx.StaticText(panelTail, label='v1.0.1', size=(45, 15), pos=(260, 2))
         # boxSizerObj.Add(staticTextHintObj, 0, flag=wx.ALIGN_RIGHT | wx.BOTTOM, border=3)
 
         boxSizerObj.Add(panelTail, 0, flag=wx.ALL | wx.EXPAND, border=0)

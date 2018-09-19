@@ -58,7 +58,7 @@ class ProFrameControll(DBPObject):
             dialogSelfObj.showChooseUI()
 
         elif intId == 103:
-            DialogSelf(self.parentObj, '关于', ' author: cg \n email: 1732821152@qq.com \n version: v1.0.0',
+            DialogSelf(self.parentObj, '关于', ' author: cg \n email: 1732821152@qq.com \n version: v1.0.1',
                        intHeight=143).showMessageUI()
 
         else:
