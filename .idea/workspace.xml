@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9064210a-bef0-4146-a72f-bc63724d5528" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controll/proFrameControll.py" beforeDir="false" afterPath="$PROJECT_DIR$/controll/proFrameControll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/win/produceFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/win/produceFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2018-09-19.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2018-09-19.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producebin/utils/configMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/producebin/utils/configMsg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +32,7 @@
           <entry key="conf" value="1" />
           <entry key="log" value="5" />
           <entry key="md" value="2" />
-          <entry key="py" value="26" />
+          <entry key="py" value="28" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
@@ -42,33 +41,32 @@
           <entry key="ANSI Aware" value="5" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="26" />
+          <entry key="Python" value="28" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="324" />
-          <entry key="py" value="4171" />
+          <entry key="py" value="4177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="324" />
-          <entry key="Python" value="4171" />
+          <entry key="Python" value="4177" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controll/proFrameControll.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="60" column="104" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
+            <state relative-caret-position="209">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
-                <element signature="e#83#92#0" expanded="true" />
                 <marker date="1537321646802" expanded="true" signature="8411:8421" ph="..." />
               </folding>
             </state>
@@ -76,10 +74,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/producebin/bin/moduleValues.py">
+        <entry file="file://$PROJECT_DIR$/producebin/utils/configureUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1976">
-              <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
+            <state relative-caret-position="19">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/producebin/utils/configMsg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -199,6 +206,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/win/produceFrame.py" />
         <option value="$PROJECT_DIR$/controll/proFrameControll.py" />
+        <option value="$PROJECT_DIR$/producebin/utils/configMsg.py" />
       </list>
     </option>
   </component>
@@ -339,13 +347,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33367983" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33367983" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3024948" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3024948" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -551,12 +559,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controll/proFrameControll.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="60" column="104" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
+        <state relative-caret-position="209">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
-            <element signature="e#83#92#0" expanded="true" />
             <marker date="1537321646802" expanded="true" signature="8411:8421" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/producebin/utils/configureUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/producebin/utils/configMsg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
         </state>
       </provider>
     </entry>

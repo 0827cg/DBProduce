@@ -17,7 +17,7 @@ class ConfigMsg:
     strFileTypeKey = 'type'
     listFileKey = ['path', 'name', 'type']
 
-    strFilePathValue = os.getcwd() + '/g/dngdosng/'
+    strFilePathValue = os.getcwd() + '/output/'
     strFileNameValue = 'test'
     strFileTypeValue = 'md'
 
