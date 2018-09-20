@@ -144,10 +144,15 @@ class ConnectDialogControll(DBPObject):
         if intResult == 1:
 
             dictConnectionMsg = self.configureUtilObj.getConfig(self.configParserObj)
-            self.windowsObj.textCtrlIpObj.SetValue(dictConnectionMsg[self.configMsgObj.strHostKey])
-            self.windowsObj.textCtrlPortObj.SetValue(dictConnectionMsg[self.configMsgObj.strPortKey])
-            self.windowsObj.textCtrlUserNameObj.SetValue(dictConnectionMsg[self.configMsgObj.strUserKey])
-            self.windowsObj.textCtrlPasswdObj.SetValue(dictConnectionMsg[self.configMsgObj.strPassWordKey])
+
+            if dictConnectionMsg:
+
+                self.windowsObj.textCtrlIpObj.SetValue(dictConnectionMsg[self.configMsgObj.strHostKey])
+                self.windowsObj.textCtrlPortObj.SetValue(dictConnectionMsg[self.configMsgObj.strPortKey])
+                self.windowsObj.textCtrlUserNameObj.SetValue(dictConnectionMsg[self.configMsgObj.strUserKey])
+                self.windowsObj.textCtrlPasswdObj.SetValue(dictConnectionMsg[self.configMsgObj.strPassWordKey])
+            else:
+                self.logUtilObj.writerLog('未从配置文件中读取到数据,dictConnectionMsg: ' + str(dictConnectionMsg))
         else:
             self.logUtilObj.writerLog('未找到相应的配置参数, intResult: ' + str(intResult))
 

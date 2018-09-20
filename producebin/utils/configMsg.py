@@ -11,15 +11,15 @@ class ConfigMsg:
     # 配置文件的一些key名字和初始化的值
 
     strExportSessionName = 'ExportConfigure'
-    strExporDescribe = '# export file name and path'
+    strExportDescribe = '# export file name and path'
     strFilePathKey = 'path'
     strFileNameKey = 'name'
     strFileTypeKey = 'type'
     listFileKey = ['path', 'name', 'type']
 
-    strFilePathValue = os.getcwd() + '/output/'
+    strFilePathValue = os.getcwd() + os.sep + 'output'
     strFileNameValue = 'test'
-    strFileTypeValue = 'md'
+    strFileTypeValue = '.md'
 
     strConSessionName = 'MysqlConfigure'
     strConnectionDescribe = '# mysql connection'

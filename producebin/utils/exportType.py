@@ -17,9 +17,18 @@ class ExportType(DBPObject):
         @staticmethod
         def showFileType():
 
-            return 'md'
+            return '.md'
     '''
     # 之后, 在module/__init__.py文件中进行引入这个类即可
+
+    # 这个类中的方法getHasImportClassName和getTypeMsg不适用于打包, 打包exe之后, module/__init.py这个文件将会找不着
+    # 所以需要另外使用别的方式
+    # 这里添加了另一种方式, 即定义一个list集合listClassName, 其中的元素即类名, 另外添加了个方法getTypeMsgByList
+    # 也就是如果增加了新的供导出类型的类, 则不仅需要在module/__init__.py文件中进行导入, 还得在此listClassName中进行添加类名, 这样才可
+    # 这样的做法是为了如需要导出exe当个执行文件, 就可以直接找到这些供导出的类型
+    # add in 2018-09-20 17:22
+
+    listClassName = ['ExportMD']
 
 
     def getHasImportClassName(self):
@@ -61,6 +70,25 @@ class ExportType(DBPObject):
             listType.append(classObj.showFileType())
 
         return listType
+
+
+    def getTypeMsgByList(self, listClassName):
+
+        # listClassName: list类型, 元素未存放提供导出类型实现的类名
+        # 返回一个list类型, 元素为类型名字, 即导出文件的后缀名
+        # add in 2018-09-20 17:14
+
+        listType = []
+
+        for strClassName in listClassName:
+
+            classObj = eval(strClassName)
+
+            listType.append(classObj.showFileType())
+
+        return listType
+
+
 
 
 

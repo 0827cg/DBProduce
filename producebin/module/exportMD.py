@@ -9,6 +9,7 @@ from producebin.dbpObject import DBPObject
 from producebin.utils.fileUtil import FileUtil
 from producebin.utils.dictDo import DictItemLength
 from producebin.utils.stringUtil import StringUtil
+# from .exportModule import ExportModule
 
 class ExportMD(DBPObject):
 
@@ -163,7 +164,7 @@ class ExportMD(DBPObject):
     @staticmethod
     def showFileType():
 
-        return 'md'
+        return '.md'
 
 
 

@@ -93,9 +93,14 @@ class SetDialogControll(DBPObject):
 
             dictConfig = self.configureUtilObj.getConfig(self.configParserObj)
             # self.setContentSingle(self.windowsObj.textCtrlSavePathObj, dictConfig[self.configMsgObj.strFilePathKey])
-            self.windowsObj.textCtrlSavePathObj.SetValue(dictConfig[self.configMsgObj.strFilePathKey])
-            self.windowsObj.textCtrlSaveNameObj.SetValue(dictConfig[self.configMsgObj.strFileNameKey])
-            self.windowsObj.comboBoxTypeObj.SetValue(dictConfig[self.configMsgObj.strFileTypeKey])
+
+            if dictConfig:
+
+                self.windowsObj.textCtrlSavePathObj.SetValue(dictConfig[self.configMsgObj.strFilePathKey])
+                self.windowsObj.textCtrlSaveNameObj.SetValue(dictConfig[self.configMsgObj.strFileNameKey])
+                self.windowsObj.comboBoxTypeObj.SetValue(dictConfig[self.configMsgObj.strFileTypeKey])
+            else:
+                self.logUtilObj.writerLog('未从配置文件中读取到数据,dictConfig: ' + str(dictConfig))
         else:
             self.logUtilObj.writerLog('未找到相应的配置参数, intResult: ' + str(intResult))
 

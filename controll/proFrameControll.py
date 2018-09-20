@@ -278,7 +278,7 @@ class ProFrameControll(DBPObject):
         # 如果检测不完全则dict类型中将包含名为warning的key, 否则则无
 
         dictCheckRes = {}
-        listTypeName = ['md', 'html', 'text', 'word']
+        # listTypeName = ['md', 'html', 'text', 'word']
 
         intCheckRes = self.configureUtilObj.checkConfigHasExist(self.configParserObj,
                                                                 self.configMsgObj.strExportSessionName,
@@ -308,16 +308,21 @@ class ProFrameControll(DBPObject):
                             strFileName = dictConfig[self.configMsgObj.strFileNameKey]
                             strFileType = dictConfig[self.configMsgObj.strFileTypeKey]
 
+                            if len(self.parentObj.listFileType) != 0:
 
-                            if strFileType in listTypeName:
+                                if strFileType in self.parentObj.listFileType:
 
-                                dictCheckRes['fileMsg'] = dictConfig
-                                dictCheckRes['tupleCheckList'] = tupleCheckedStr
+                                    dictCheckRes['fileMsg'] = dictConfig
+                                    dictCheckRes['tupleCheckList'] = tupleCheckedStr
 
+                                else:
+
+                                    self.logUtilObj.writerLog('暂时不支持导出该类型,导出type=' + strFileType +
+                                                              '可供导出类型为listTypeName' + str(self.parentObj.listFileType))
+                                    dictCheckRes['warning'] = 0
                             else:
-
-                                self.logUtilObj.writerLog('暂时不支持导出该类型')
-                                dictCheckRes['warning'] = 0
+                                self.logUtilObj.writerLog('暂无可供导出的类型, listTypeName: ' + str(self.parentObj.listFileType))
+                                dictCheckRes['warning'] = -1
                         else:
 
                             dictCheckRes['warning'] = -1
@@ -352,7 +357,7 @@ class ProFrameControll(DBPObject):
         strFileType = dictConfig[self.configMsgObj.strFileTypeKey]
 
 
-        if operator.eq(strFileType, 'md'):
+        if operator.eq(strFileType, '.md'):
             exportMDObj = ExportMD(strFileDir, strFileName)
             intResult = ModuleValues(self.searchValuesObj).mdGenerateTuple(exportMDObj, self.strComboBoxChoice, tupleCheckedStr)
 
@@ -407,7 +412,10 @@ class ProFrameControll(DBPObject):
 
         # 获取可供选择的导出类型
 
-        listFileType = ExportType().getTypeMsg()
+        # listFileType = ExportType().getTypeMsg()
+
+        exportTypeObj = ExportType()
+        listFileType = exportTypeObj.getTypeMsgByList(exportTypeObj.listClassName)
         self.logUtilObj.writerLog('检测到可导出类型: ' + str(listFileType))
 
         return listFileType

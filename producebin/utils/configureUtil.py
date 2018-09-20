@@ -35,20 +35,9 @@ class ConfigureUtil:
         # if not os.path.exists(self.strDir+self.strFileName):
         #     self.logUtilObj.writerLog('将初始化配置文件')
 
-        strExportSessionName = 'ExportConfigure'
-        strExportFilePath = os.getcwd() + '/g/dngdosng/'
-        strExportFileName = 'test'
-        strExportFileType = 'md'
-
-        strConSessionName = 'MysqlConfigure'
-        strHost = ''
-        strPort = ''
-        strUserName = ''
-        strPassWord = ''
-
         configParserObj.add_section(self.configMsgObj.strExportSessionName)
 
-        configParserObj.set(self.configMsgObj.strExportSessionName, self.configMsgObj.strExporDescribe)
+        configParserObj.set(self.configMsgObj.strExportSessionName, self.configMsgObj.strExportDescribe)
         configParserObj.set(self.configMsgObj.strExportSessionName, self.configMsgObj.strFilePathKey,
                             self.configMsgObj.strFilePathValue)
         configParserObj.set(self.configMsgObj.strExportSessionName, self.configMsgObj.strFileNameKey,
@@ -109,13 +98,19 @@ class ConfigureUtil:
 
                     listKeyName = configParserObj.options(sectionItem)
                     sectionObj = configParserObj[sectionItem]
+
                     if len(listKeyName) != 0:
-                        for keyItem in  listKeyName:
-                            valueItem = sectionObj[keyItem]
-                            if valueItem == None:
-                                dictConfMsg[sectionItem] = listKeyName
+                        for keyItem in listKeyName:
+
+                            if '#' not in keyItem:
+
+                                valueItem = sectionObj[keyItem]
+                                if valueItem is None:
+                                    dictConfMsg[sectionItem] = listKeyName
+                                else:
+                                    dictConfMsg[keyItem] = valueItem
                             else:
-                                dictConfMsg[keyItem] = valueItem
+                                continue
                     else:
                         dictConfMsg[sectionItem] = ''
         self.logUtilObj.writerLog('配置文件中读取到的配置有: ' + str(dictConfMsg))
