@@ -5,7 +5,7 @@
 程序运行截屏:
 
 <div align=center>
-	<img src='https://github.com/cgstudios/DBProduce/blob/master/img/img-win-readme.png'/>
+	<img src='https://github.com/cgstudios/DBProduce/blob/master/img/dbproduce.png'/>
 </div>
 
 用到的模块
