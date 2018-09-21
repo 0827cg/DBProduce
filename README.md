@@ -28,10 +28,22 @@ class XXX(DBProduce):
     @staticmethod
     def showFileType():
 
-        return 'md'
+        return '.md'
 ```
 
-之后需要在`producebin/module/__init__.py`中进行引入
+之后需要在`producebin/module/__init__.py`中进行引入, 然后在`producebin/util/exportType.py`中的`listClassName`集合中添加
+元素, 元素即创建的类名
+
+这样做的目的, 仅仅只是为了能读取到可供导出的类型的种类个数
+
+### 不足
+
+这里有个问题, 就是程序运行起来很耗资源, `cpu`最高占用`19%`, 内存占用`16%`.....这是个悲催的故事
+
+所以, 这个并不是正式版, 还需要开发优化
+
+
+> 注: 个人项目，不定期维护更新
 
 > author: cg错过
 
@@ -40,6 +52,6 @@ class XXX(DBProduce):
 > first commit time: 2018-08-15
 
 
-[0]: https://github.com/cgstudios/DBProduce/releases/tag/1.0.0
+[0]: https://github.com/0827cg/DBProduce/releases
 
 
