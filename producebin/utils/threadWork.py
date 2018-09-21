@@ -6,6 +6,7 @@
 
 import wx
 import threading
+import time
 from producebin.dbpObject import DBPObject
 
 class ThreadLog(threading.Thread, DBPObject):
@@ -47,6 +48,8 @@ class ThreadLog(threading.Thread, DBPObject):
 
         while True:
 
+            time.sleep(0.02)
+
             if self.eventMarkObj.isSet():
                 self.logUtilObj.writerLog('ThreadLog event is set, 子线程退出')
                 break
@@ -57,7 +60,6 @@ class ThreadLog(threading.Thread, DBPObject):
 
                     # self.parentObj.proFrameControllObj.setLogMsgWinShow(strContent)
                     wx.CallAfter(self.parentObj.proFrameControllObj.setLogMsgWinShow, strContent)
-                    # time.sleep(1)
 
 
 class ThreadExport(threading.Thread, DBPObject):
@@ -91,6 +93,8 @@ class ThreadExport(threading.Thread, DBPObject):
         # 1531191892565870400
 
         while True:
+
+            time.sleep(0.02)
 
             if self.eventMarkObj.isSet():
                 self.logUtilObj.writerLog('ThreadExport event is set, 子线程退出')

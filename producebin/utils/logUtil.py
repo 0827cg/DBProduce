@@ -55,7 +55,10 @@ class LogUtil:
             try:
 
                 while booleanDo:
-                    print(pos)
+
+                    time.sleep(0.02)
+
+                    # print(pos)
                     # currentPos = fileObj.seek(0, os.SEEK_END)
                     # print(currentPos)
                     #

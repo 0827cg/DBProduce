@@ -5,6 +5,7 @@
 # time  : 2018-06-08
 
 import os
+import time
 from producebin.dbpObject import DBPObject
 
 
@@ -147,6 +148,9 @@ class FileUtil(DBPObject):
                     # if currentPos > pos:
                     #     pos = fileObj.seek(0, os.SEEK_END)
                     #     continue
+
+                    time.sleep(0.02)
+
 
                     strLineContent = fileObj.readline()
                     if not strLineContent:

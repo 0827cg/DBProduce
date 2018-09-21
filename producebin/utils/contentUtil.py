@@ -5,6 +5,7 @@
 # time  : 2018-08-03
 
 import os
+import time
 
 class ContentUtil:
 
@@ -25,6 +26,8 @@ class ContentUtil:
             try:
 
                 while True:
+
+                    time.sleep(0.02)
 
                     if self.booleanGetTailExit:
                         break
