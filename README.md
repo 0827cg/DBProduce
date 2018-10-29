@@ -11,7 +11,7 @@
 用到的模块
 
 * pymysql
-* wx
+* wxPython
 
 即运行环境需要这些, 模块安装完成之后使用命令`python DBProduce.py`来运行
 

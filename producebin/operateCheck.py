@@ -10,6 +10,12 @@ from producebin.utils.checkEnv import CheckEnv
 
 class OperateCheck(DBPObject):
 
+    '''
+    describe: 检测执行需要用到的模块是否安装, 如后期需要添加模块, 则在此处添加到arrModuleName中
+
+    ps: 现在感觉这个是没用的--add in 2018-10-29
+    '''
+
     # 检测执行需要用到的模块是否安装
     # 如后期需要添加模块, 则在此处添加到arrModuleName中
 
@@ -19,6 +25,11 @@ class OperateCheck(DBPObject):
 
 
     def checkModuleExists(self):
+
+        '''
+        describe: 检测模块是否存在
+        :return:
+        '''
 
         # 检测模块是否存在
 

@@ -12,11 +12,11 @@ from sql.sqlSentence import SqlSentence
 
 class SearchValues(DBPObject):
 
-    # 获取数据库信息
-    # 其中有些方法返回OrderedDict类型数据, 这种类型数据的遍历获取数据的方式和dict一样
-    # 不过就是这种OrderedDict类型数据是有序的
-
-    # 将获取sql语句的方式更改为从代码中读取--update time:2018-08-17
+    '''
+    describe: 获取数据库信息, 其中有些方法返回OrderedDict类型数据, 这种类型数据的遍历获取数据的方式和dict一样,
+    不过就是这种OrderedDict类型数据是有序的
+    将获取sql语句的方式更改为从代码中读取--update time:2018-08-17
+    '''
 
     connectionMysqlObj = None
 
@@ -26,10 +26,14 @@ class SearchValues(DBPObject):
 
     def getDatabaseName(self):
 
-        # 查询连接的数据库中所有的库名字
-        # 返回一个list类型数据, 元素为库名字, string类型
+        '''
+        describe: 查询链接的数据库中所有库的名字
+        :return: 返回一个list类型数据, 元素为str类型库名字,
+        '''
 
         listValue = []
+
+        self.logUtilObj.writerLog('准备查询该连接的库下所有的数据库...')
 
         try:
             # strGetDatabaseSql = self.fileUtilObj.readFileContent('sql/getDatabaseName.sql')
@@ -64,11 +68,15 @@ class SearchValues(DBPObject):
 
     def getTotalTablesName(self, strDBName):
 
-        # 获取该库下所有的表名字
-        # strDBName: 库名字
-        # 返回一个lis类型数据, 元素为表名字, string类型
+        '''
+        describe: 根据数据库名字查询该库下所有的表
+        :param strDBName: 数据库名字
+        :return: 返回一个lis类型数据, 元素为str类型的表名字
+        '''
 
         listValue = []
+
+        self.logUtilObj.writerLog('准备查询[strDBName=' + strDBName + ']该库下所有的表...')
 
         try:
             # strGetTableNameSql = self.fileUtilObj.readFileContent('sql/getTotalTableName.sql') % ("'" + strDBName + "'")
@@ -102,10 +110,13 @@ class SearchValues(DBPObject):
 
     def getTotalTablesNameForExport(self, strDBName):
 
-        # 获取所有表名字
-        # strDBName: 库名
-        # 返回一个list类型数据 其元素为OrderedDict类型
-        # 为导出所需
+        '''
+        describe: 根据数据库名字查询该库下所有的表, 专门为导出功能提供
+        :param strDBName: 数据库名字
+        :return: 返回一个list类型数据 其元素为OrderedDict类型
+        '''
+
+        self.logUtilObj.writerLog('为导出,准备查询[strDBName=' + strDBName + ']该库下所有的表...')
 
         try:
             # strGetTotalTableNameSql = str(self.fileUtilObj.readFileContent('sql/getTotalTableName.sql')
@@ -132,12 +143,16 @@ class SearchValues(DBPObject):
 
     def getSingleTableMsg(self, strDBName, strTableName):
 
-        # 获取表信息
-        # strDBName: 库名
-        # strTable: 表名
-        # 返回一个list类型数据, 其元素为OrderedDict类型
+        '''
+        describe: 根据数据库及表名获取该表的信息
+        :param strDBName: 库名字
+        :param strTableName: 表名字
+        :return: 返回一个list类型数据, 其元素为OrderedDict类型
+        '''
 
-        strGetTableMsgSql = ''
+        self.logUtilObj.writerLog('准备查询[strDBName=' + strDBName + ',strTableName=' + strTableName + ']的表信息...')
+
+        # strGetTableMsgSql = ''
         try:
 
             # strGetTableMsgSql = self.fileUtilObj.readFileContent('sql/getTableMsgByTableName.sql') % (
@@ -163,12 +178,16 @@ class SearchValues(DBPObject):
 
     def getSingleTableChangeMsg(self, strDBName, strTableName):
 
-        # 根据表名来获取表的简单的变更信息
-        # strDBName: 库名
-        # strTable: 表名
-        # 返回一个list类型数据, 其元素为OrderedDict类型
+        '''
+        describe: 根据库名和表名来获取表的简单的变更信息
+        :param strDBName: 库名
+        :param strTableName: 表名
+        :return: 返回一个list类型数据, 其元素为OrderedDict类型
+        '''
 
-        strGetTableChangeMsgSql = ''
+        self.logUtilObj.writerLog('准备查询[strDBName=' + strDBName + ',strTableName=' + strTableName + ']表的变更信息...')
+
+        # strGetTableChangeMsgSql = ''
 
         try:
             # strGetTableChangeMsgSql = str(self.fileUtilObj.readFileContent('sql/getTableDataChangeMsg.sql')

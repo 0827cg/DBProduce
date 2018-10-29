@@ -9,7 +9,9 @@ from producebin.dbpObject import DBPObject
 
 class ModuleValues(DBPObject):
 
-    # 各个导出类型模块的总的生成数据的方法
+    '''
+    describe: 各个导出类型模块的总的生成数据的方法
+    '''
 
     def __init__(self, valuesObj):
 
@@ -19,11 +21,13 @@ class ModuleValues(DBPObject):
 
     def mdGenerate(self, exportMDObj, strDBName, strTableName):
 
-        # md模块的外接方法
-        # exportMDObj: exportMD对象
-        # strDBName: 库名, string类型
-        # strTableName: 表名字, string类型
-        # 执行完成返回1, 否则返回-1
+        '''
+        describe: md模块的外接方法
+        :param exportMDObj: exportMD对象
+        :param strDBName: 库名, string类型
+        :param strTableName: 表名字, string类型
+        :return: 执行完成返回1, 否则返回-1
+        '''
 
         intIndexTime = time.time()
 
@@ -60,11 +64,13 @@ class ModuleValues(DBPObject):
 
     def mdGenerateTuple(self, exportMDObj, strDBName, tupleTableName):
 
-        # md模块的外接方法
-        # exportMDObj: exportMD对象
-        # strDBName: 库名, string类型
-        # tupleTableName: 表名字, tuple元组类型/或者list
-        # 执行完成返回1, 否则返回-1
+        '''
+        describe: md模块的外接方法
+        :param exportMDObj: exportMD对象
+        :param strDBName: 库名, string类型
+        :param tupleTableName: 表名字, tuple元组类型/或者list
+        :return: 执行完成返回1, 否则返回-1
+        '''
 
         intIndexTime = time.time()
         intIndex = 0
@@ -110,7 +116,7 @@ class ModuleValues(DBPObject):
             self.logUtilObj.writerLog('导出文件路径: ' + exportMDObj.strFileName)
             intResult = 1
 
-        self.logUtilObj.writerLog("导出耗时: " + str(round((time.time() - intIndexTime), 4)) + "s")
+        self.logUtilObj.writerLog("导出耗时: " + str(round(time.time() - intIndexTime, 4)) + "s")
         self.logUtilObj.writerLog("==================")
 
         return intResult

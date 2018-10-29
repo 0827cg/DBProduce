@@ -83,6 +83,17 @@ class ThreadExport(threading.Thread, DBPObject):
     def stop(self):
         self.eventMarkObj.set()
 
+    def getResult(self):
+
+        # 添加获取线程返回值
+        # add in 2018-10-29 12:04
+
+        threading.Thread.join(self)  # 等待线程执行完毕
+        try:
+            return self.result
+        except Exception:
+            return None
+
 
     def run(self):
 
@@ -100,7 +111,9 @@ class ThreadExport(threading.Thread, DBPObject):
                 self.logUtilObj.writerLog('ThreadExport event is set, 子线程退出')
                 break
             else:
-                self.func(self.args)
+                self.result = self.func(self.args)
+
+                # 导出完成将自动停止线程
                 self.eventMarkObj.set()
 
 

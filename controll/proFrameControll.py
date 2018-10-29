@@ -86,6 +86,17 @@ class ProFrameControll(DBPObject):
                 threadExportObj = ThreadExport(self.exportMsg, dictCheckRes)
                 threadExportObj.start()
 
+                # 添加获取线程返回值
+                # add in 2018-10-29 12:04
+                intResult = threadExportObj.getResult()
+                self.logUtilObj.writerLog('超长日志未完全显示')
+                self.logUtilObj.writerLog('详情见日志文件')
+
+                if intResult == 1:
+                    DialogSelf(self.parentObj, 'info', '导出成功').showMessageUI()
+                else:
+                    DialogSelf(self.parentObj, 'error', '导出出错').showMessageUI()
+
 
 
             # self.exportMsg()
@@ -102,8 +113,11 @@ class ProFrameControll(DBPObject):
 
     def comboboxEvent(self, eventObj):
 
-        # 为下拉框选择之后赋予响应事件的处理方法( when an item on the list is selected. )
-        # eventObj: 响应事件对象
+        '''
+        describe: 为下拉框选择之后赋予响应事件的处理方法( when an item on the list is selected. )
+        :param eventObj: 响应事件对象
+        :return:
+        '''
 
         # comboboxObj = eventObj.GetEventObject()
         # self.logUtilObj.writerLog(str(type(comboboxObj)))
@@ -118,7 +132,11 @@ class ProFrameControll(DBPObject):
 
     def comboboxCloseUp(self, eventObj):
 
-        # 下拉选择框点击下拉后的响应事件处理
+        '''
+        describe: 下拉选择框点击下拉后的响应事件处理
+        :param eventObj: 响应事件对象
+        :return:
+        '''
 
         # global intIndex
 
@@ -152,8 +170,11 @@ class ProFrameControll(DBPObject):
 
     def chooseRadioButton(self, eventObj):
 
-        # eventObj:  事件对象
-        # 为所有界面中的单选按钮(RadioButton)赋予相对应的执行方法
+        '''
+        describe: 为所有界面中的单选按钮(RadioButton)赋予相对应的执行方法
+        :param eventObj: 事件对象
+        :return:
+        '''
 
         intId = eventObj.GetId()
         radioButtonObj = eventObj.GetEventObject()
@@ -172,8 +193,11 @@ class ProFrameControll(DBPObject):
 
     def frameFocus(self, eventObj):
 
-        # 焦点检测事件
-        # 当frame得到焦点时, 判断数据库是否有连接,若无连接则弹框
+        '''
+        describe: 焦点检测事件, 当frame得到焦点时, 判断数据库是否有连接,若无连接则弹框
+        :param eventObj:  事件对象
+        :return:
+        '''
 
         # print(str(self.connectionMysqlObj) + '触发焦点')
 
@@ -234,8 +258,11 @@ class ProFrameControll(DBPObject):
 
     def setChoiceForComboBox(self, arrItems):
 
-        # 为主面板中的下拉框设置内容
-        # arrItems: 需要显示到下拉框中的内容
+        '''
+        describe: 为主面板中的下拉框设置内容
+        :param arrItems: 需要显示到下拉框中的内容
+        :return:
+        '''
 
         if len(arrItems) > 0:
 
@@ -245,7 +272,7 @@ class ProFrameControll(DBPObject):
 
             except Exception as error:
 
-                self.logUtilObj.writerLog('下拉选择框设置内容时出错,' + error)
+                self.logUtilObj.writerLog('下拉选择框设置内容时出错,' + str(error))
 
             else:
                 self.intGetDatabaseResult = 1
@@ -261,8 +288,11 @@ class ProFrameControll(DBPObject):
 
     def setContentForCheckListBox(self, arrItems):
 
-        # 为主面板中的复选列表框设置内容
-        # arrItems: 需要显示到复选列表框中的内容, 类型为list, 内容为其元素
+        '''
+        describe: 为主面板中的复选列表框设置内容
+        :param arrItems: 需要显示到复选列表框中的内容, 类型为list, 内容为其元素
+        :return:
+        '''
 
         if len(arrItems) > 0:
             self.parentObj.checkListBoxObj.SetItems(arrItems)
@@ -273,9 +303,11 @@ class ProFrameControll(DBPObject):
 
     def exportCheck(self):
 
-        # 导出前的检测
-        # 即点击导出按钮进行检测是否连接选择数据库或者选择导出表, 返回一个dict类型数据
-        # 如果检测不完全则dict类型中将包含名为warning的key, 否则则无
+        '''
+        describe: 导出前的检测, 即点击导出按钮进行检测是否连接选择数据库或者选择导出表, 返回一个dict类型数据
+        如果检测不完全则dict类型中将包含名为warning的key, 否则则无
+        :return: dict类型, 如果检测不完全则dict类型中将包含名为warning的key, 否则则无
+        '''
 
         dictCheckRes = {}
         # listTypeName = ['md', 'html', 'text', 'word']
@@ -343,11 +375,17 @@ class ProFrameControll(DBPObject):
 
     def exportMsg(self, dictCheckRes):
 
-        # dictCheckRes: 检测结果, dict类型
-        # key: fileMsg, 其元素为dict,该dict的内容即配置文件中导出配置的key和value
-        # key: tupleCheckList , 为多选框中已经选择的元素, 为tuple元组类型
+        '''
+        describe: 导出函数
+        :param dictCheckRes: 检测结果, dict类型,
+                key: fileMsg, 其元素为dict,该dict的内容即配置文件中导出配置的key和value
+                key: tupleCheckList , 为多选框中已经选择的元素, 为tuple元组类型
+        :return: 1: 成功, -1: 不成功
+        '''
 
         # exportCheck方法已经进行判断
+
+        intResult = 0
 
         dictConfig = dictCheckRes['fileMsg']
         tupleCheckedStr = dictCheckRes['tupleCheckList']
@@ -361,17 +399,26 @@ class ProFrameControll(DBPObject):
             exportMDObj = ExportMD(strFileDir, strFileName)
             intResult = ModuleValues(self.searchValuesObj).mdGenerateTuple(exportMDObj, self.strComboBoxChoice, tupleCheckedStr)
 
+
             # if intResult == 1:
             #     DialogSelf(self.parentObj, 'info', '导出成功').showMessageUI()
             # else:
             #     DialogSelf(self.parentObj, 'error', '导出出错').showMessageUI()
             # self.logUtilObj.writerLog('intResult: ' + str(intResult))
+        else:
+            intResult = -1
+
+        return intResult
+
 
 
     def selectAll(self, booleanChoice):
 
-        # 全选
-        # booleanChoice: 选择的状态: true: 选中, false: 不选中
+        '''
+        describe: 全选
+        :param booleanChoice: 选择的状态: true: 选中, false: 不选中
+        :return:
+        '''
 
         intTotal = self.parentObj.checkListBoxObj.GetCount()
 
@@ -386,7 +433,10 @@ class ProFrameControll(DBPObject):
 
     def startThreadForLog(self):
 
-        # 启动日志线程
+        '''
+        describe: 启动日志线程
+        :return:
+        '''
 
         self.logUtilObj.writerLog('将启动子线程thread-log(读取渲染日志内容)')
 
@@ -398,9 +448,16 @@ class ProFrameControll(DBPObject):
 
     def setLogMsgWinShow(self, strMsg):
 
-        # 为日志显示框设置显示内容
+        '''
+        describe: 为日志显示框设置显示内容
+        :param strMsg:
+        :return:
+        '''
 
-        self.parentObj.textCtrlLogShowObj.AppendText(strMsg + '\n')
+        # 控制文本长度显示, 这里只显示前35个字符
+        strNewMsg = strMsg[0:34]
+
+        self.parentObj.textCtrlLogShowObj.AppendText(strNewMsg + '\n')
 
 
     def getSearchValues(self):
@@ -410,7 +467,10 @@ class ProFrameControll(DBPObject):
 
     def getFileTypeToExport(self):
 
-        # 获取可供选择的导出类型
+        '''
+        describe: 获取可供选择的导出类型
+        :return:
+        '''
 
         # listFileType = ExportType().getTypeMsg()
 
